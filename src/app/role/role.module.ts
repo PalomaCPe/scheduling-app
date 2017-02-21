@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RoleComponent} from './role.component';
 
 @NgModule({
     imports: [ BrowserModule ],
-    declarations: [ AppComponent, CustomerComponent, BookingComponent, RoleComponent, ProfessionalComponent, ProjectComponent], 
-    bootstrap: [ AppComponent, CustomerComponent, BookingComponent, RoleComponent, ProfessionalComponent, ProjectComponent]
+    declarations: [ RoleComponent], 
+    bootstrap: [ RoleComponent]
 })
 
 export class RoleModule { }
