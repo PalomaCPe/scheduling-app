@@ -1,4 +1,15 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';		
-import { BookingModule } from './project.module';		
+import { ProjectModule } from './project.module';		
  		
 platformBrowserDynamic().bootstrapModule(ProjectModule);
+
+export class Project
+{
+    projectId: number;
+    name: string = "Name";
+    StartDate: string = "Start Date";
+    EndDate: string = "End Date";
+    wbs: string = "wbs";
+    customer: string = "customer";
+    sponsor: string = "Sponsor"
+}
