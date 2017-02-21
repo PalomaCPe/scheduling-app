@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { Professionals } from './professionals.component';
+import { Professional } from './professional.component';
 
 @NgModule({
     imports: [ BrowserModule ],
-    declarations: [ Professionals ],
-    bootstrap: [ Professionals]
+    declarations: [ Professional ],
+    bootstrap: [ Professional]
 })
 
 export class ProfessionalsModule{
