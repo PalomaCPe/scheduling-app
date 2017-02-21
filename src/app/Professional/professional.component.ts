@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 @Component({
     moduleId: module.id,
     selector: 'ava-app' ,
-    templateUrl: 'app.html'
+    templateUrl: 'professional.html'
 })
 
 export class AppComponent{ 
-    propriedade: string =;
+    propriedade: string = "Hello Word!"
 }
