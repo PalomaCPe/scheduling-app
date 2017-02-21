@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
     moduleId: module.id,
-    selector: 'ava-app' ,
+    selector: 'ava-alocation' ,
     templateUrl: 'alocation.html'
 })
 
-export class AppComponent{ 
+export class AlocationComponent{ 
     propriedade: string = "Hello world";
     
 

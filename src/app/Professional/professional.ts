@@ -1,4 +1,9 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';		
-import { AppModule } from './app.module';		
- 		
-platformBrowserDynamic().bootstrapModule(AppModule);
+export class ProComponent{
+    pid: int; 
+    eid: int;
+    nome: string;
+    email: string;
+    cargo: string;
+    telefone: string;
+    27017
+}

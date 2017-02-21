@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     moduleId: module.id,
     selector: 'ava-app' ,
-    templateUrl: 'customer.html'
+    templateUrl: 'app.html'
 })
 
 export class AppComponent{ 
@@ -11,4 +11,3 @@ export class AppComponent{
 
 }
     
-

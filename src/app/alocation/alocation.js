@@ -1,5 +1,8 @@
 "use strict";
-var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
-var alocation_module_1 = require('./alocation.module');
-platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(alocation_module_1.AppModule);
+var Alocation = (function () {
+    function Alocation() {
+    }
+    return Alocation;
+}());
+exports.Alocation = Alocation;
 //# sourceMappingURL=alocation.js.map
