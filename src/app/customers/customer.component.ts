@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent{ 
 
 
-propriedade: String = "Oi, eu sou Goku"
+textoInicial: String = "Oi, eu sou Goku"
 
 }
 
