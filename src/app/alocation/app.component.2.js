@@ -11,17 +11,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.propriedade = 'Show de Bola ! isso ';
+        this.propriedade = "Hello world";
     }
     AppComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'ava-app',
-            templateUrl: 'customer.html'
+            templateUrl: 'app.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=app.component.2.js.map
