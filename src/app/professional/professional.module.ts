@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {ProfessionalComponent} from './professional.component';
 
 @NgModule({
     imports: [ BrowserModule ],
-    declarations: [ AppComponent, CustomerComponent, BookingComponent, RoleComponent, ProfessionalComponent, ProjectComponent], 
-    bootstrap: [ AppComponent, CustomerComponent, BookingComponent, RoleComponent, ProfessionalComponent, ProjectComponent]
+    declarations: [ ProfessionalComponent], 
+    bootstrap: [ ProfessionalComponent]
 })
 
 export class ProfessionalModule { }
