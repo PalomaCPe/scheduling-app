@@ -11,4 +11,4 @@ import { Professionals } from './professionals.component';
 
 export class ProfessionalsModule{
 
-    }
+}
