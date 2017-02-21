@@ -7,13 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent{ 
-<<<<<<< HEAD
-    propriedade: string =;
-}
-=======
-    propriedade: string = "Hello world";
-    
+
+
+textoInicial: String = "Oi, eu sou Goku"
 
 }
 
->>>>>>> dc08154163a930789b633bcb21752a6399b744cd

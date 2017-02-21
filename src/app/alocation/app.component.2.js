@@ -17,11 +17,11 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'ava-app',
-            templateUrl: 'customer.html'
+            templateUrl: 'app.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=app.component.2.js.map

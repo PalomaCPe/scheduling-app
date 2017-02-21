@@ -17,7 +17,7 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'ava-app',
-            templateUrl: 'customer.html'
+            templateUrl: 'app.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
