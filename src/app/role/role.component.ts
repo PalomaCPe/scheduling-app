@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class RoleComponent{
-     roleLabel: string = "Component Role "; 
+     roleLabel: string = "Role "; 
 }

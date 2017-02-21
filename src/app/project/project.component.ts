@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class ProjectComponent{
-     projectLabel: string = "Component Project "; 
+     projectLabel: string = "Project "; 
 }

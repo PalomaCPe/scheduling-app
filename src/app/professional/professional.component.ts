@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class ProfessionalComponent{
-     professionalLabel: string = "Component Professional "; 
+     professionalLabel: string = "Professional "; 
 }

@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class CustomerComponent{
-    propriedadeC: string = "Pagina Customer "; 
+    propriedadeC: string = "Customer "; 
  }

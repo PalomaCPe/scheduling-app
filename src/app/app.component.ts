@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent{
-    propriedade: string = "S E A L S "; 
+    propriedade: string = "Hello world"; 
  }

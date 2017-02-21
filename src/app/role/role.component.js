@@ -9,19 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.propriedade = "Hello world";
+var RoleComponent = (function () {
+    function RoleComponent() {
+        this.roleLabel = "Role ";
     }
-    AppComponent = __decorate([
+    RoleComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'ava-app',
-            templateUrl: 'app.html'
+            selector: 'role-app',
+            templateUrl: 'role.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], RoleComponent);
+    return RoleComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.RoleComponent = RoleComponent;
+//# sourceMappingURL=role.component.js.map
