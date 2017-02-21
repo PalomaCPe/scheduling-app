@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class BookingComponent
-{
-    propriedade: string = "Booking";
+{    
+    project: string = "";
+    propriedade: string = "";
+   
 }
