@@ -9,19 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.propriedade = "Hello World";
+var platform_browser_1 = require('@angular/platform-browser');
+var booking_component_1 = require('./booking.component');
+var BookingModule = (function () {
+    function BookingModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'ava-app',
-            templateUrl: 'app.html'
+    BookingModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [booking_component_1.BookingComponent],
+            bootstrap: [booking_component_1.BookingComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], BookingModule);
+    return BookingModule;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.BookingModule = BookingModule;
+//# sourceMappingURL=booking.module.js.map
