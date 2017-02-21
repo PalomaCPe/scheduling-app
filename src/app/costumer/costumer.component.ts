@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class Costumer{ 
-    nome: string = 'costumer';
-    cnpj: string = '';
+    name: string = 'costumer';
     contact: string = '';
     email: string ='';
-    avaContact: string= '';
+    sponsor: string= '';
 }

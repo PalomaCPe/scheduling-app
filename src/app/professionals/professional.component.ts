@@ -14,5 +14,5 @@ export class Professional{
 	email: string = 'josephclimber@mail.com';
 	phone: string ='2345678';
 	role: string ='2345678';
-
+	
 }
