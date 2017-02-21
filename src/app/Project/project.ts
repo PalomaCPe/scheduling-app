@@ -1,6 +1,8 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';		
-import { ProjectModule } from './project.module';		
- 		
+import { ProjectModule } from './project.module';
+import { Customer } from '../customer/customer';
+
+
 platformBrowserDynamic().bootstrapModule(ProjectModule);
 
 export class Project
