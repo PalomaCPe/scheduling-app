@@ -9,19 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.propriedade = 'Hello World';
+var platform_browser_1 = require('@angular/platform-browser');
+var role_component_1 = require('./role.component');
+var RoleModule = (function () {
+    function RoleModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'ava-app',
-            templateUrl: 'app.html'
+    RoleModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [role_component_1.RoleComponent],
+            bootstrap: [role_component_1.RoleComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], RoleModule);
+    return RoleModule;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.RoleModule = RoleModule;
+//# sourceMappingURL=role.module.js.map
