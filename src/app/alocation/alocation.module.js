@@ -11,18 +11,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var alocation_component_1 = require('./alocation.component');
-var AppModule = (function () {
-    function AppModule() {
+var AlocationModule = (function () {
+    function AlocationModule() {
     }
-    AppModule = __decorate([
+    AlocationModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
-            declarations: [alocation_component_1.AppComponent],
-            bootstrap: [alocation_component_1.AppComponent]
+            declarations: [alocation_component_1.AlocationComponent],
+            bootstrap: [alocation_component_1.AlocationComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], AlocationModule);
+    return AlocationModule;
 }());
-exports.AppModule = AppModule;
+exports.AlocationModule = AlocationModule;
 //# sourceMappingURL=alocation.module.js.map
