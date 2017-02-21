@@ -1,0 +1,15 @@
+
+
+Criar branch
+    git checkout -b <nomedabranch>
+
+Publicar branch
+    git push origin <nomedabranch>
+
+Apontar para a branch 
+    git fetch
+    git checkout <nomedabranch>
+
+Listar as branches remotas
+    git branch -a
+
