@@ -1,4 +1,6 @@
 .idea
+.js
+.js.map
 node_modules
 .vscode
 jspm_packages
