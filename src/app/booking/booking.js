@@ -2,6 +2,8 @@
 var Booking = (function () {
     function Booking() {
     }
+
+    
     return Booking;
 }());
 exports.Booking = Booking;
