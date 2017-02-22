@@ -1,4 +1,4 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';		
-import { RoleModule } from './role.module';		
+import { BookingModule } from './booking/booking.module';		
  		
-platformBrowserDynamic().bootstrapModule(RoleModule);
+platformBrowserDynamic().bootstrapModule(BookingModule);
