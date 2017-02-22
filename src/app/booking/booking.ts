@@ -1,6 +1,8 @@
-export class Booking {
+export class Booking{
     id: number;
     startDate: Date;
     endDate: Date;
-    bookingPercentual: number;
+    percentual: number;
+    projectId: number;
+    professionalId: number;
 }

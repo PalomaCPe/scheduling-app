@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { Booking } from './booking';
+
 @Component({
-     moduleId: module.id,
-    selector: 'booking-app' ,
+    moduleId: module.id,
+    selector: 'ava-bok-app',
     templateUrl: 'booking.html'
 })
 
-export class BookingComponent{
-     bookingLabel: string = "Booking"; 
+export class BookingComponent {
+    propriedade: string = 'Página de alocações';
 }

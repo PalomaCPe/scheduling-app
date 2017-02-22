@@ -4,12 +4,12 @@ import { BookingComponent } from './booking.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-    imports: [ BrowserModule,
-        RouterModule.forChild([
-            {path: 'booking',component: BookingComponent}
-        ])
-     ],
-    declarations: [ BookingComponent]
+    imports: [BrowserModule,
+    // ROTA
+    RouterModule.forChild([
+        { path: 'bookings', component: BookingComponent}
+    ])],
+    declarations: [ BookingComponent ]
 })
 
 export class BookingModule { }
