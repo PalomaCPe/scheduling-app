@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Booking } from './booking';
+import { BOOKINGS } from '../shared/mock';
 
 @Component({
     moduleId: module.id,
@@ -9,4 +10,5 @@ import { Booking } from './booking';
 
 export class BookingComponent {
     propriedade: string = 'Página de alocações';
+    bookings: Booking[] = BOOKINGS;
 }

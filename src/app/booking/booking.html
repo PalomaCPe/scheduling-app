@@ -1,5 +1,5 @@
 <div class="page-header">
-    <h3> <span class="glyphicon glyphicon-calendar"></span> {{ bookingLabel }} </h3>
+    <h3> <span class="glyphicon glyphicon-calendar"></span> {{ propriedade }} </h3>
 </div>
 
 <div class="page-content">
@@ -15,11 +15,11 @@
         </thead>
         <tbody>
             <tr *ngFor="let booking of bookings">
-                <td> {{ booking.startDate }} </td>
-                <td> {{ }} </td>
-                <td> {{ }} </td>
-                <td> {{ }} </td>
-                <td> {{ }} </td>
+                <td> {{ booking.startDate | date: 'dd/MM/yyyy' }} </td>
+                <td> {{ booking.endDate | date: 'dd/MM/yyyy' }} </td>
+                <td> {{ booking.percentual }} </td>
+                <td> {{ booking.projectId }} </td>
+                <td> {{ booking.professionalId }} </td>
             </tr>
         </tbody>
     </table>

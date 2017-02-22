@@ -12,4 +12,4 @@ import { RouterModule } from '@angular/router';
     declarations: [ BookingComponent ]
 })
 
-export class BookingModule { }
+export class BookingModule {  }
