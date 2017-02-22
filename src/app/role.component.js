@@ -9,19 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var roleModule = (function () {
-    function roleModule() {
+var RoleComponent = (function () {
+    function RoleComponent() {
+        this.propriedade = "Hello world";
     }
-    roleModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [roleComponent],
-            bootstrap: [roleComponent]
+    RoleComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'ava-role',
+            templateUrl: 'role.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], roleModule);
-    return roleModule;
+    ], RoleComponent);
+    return RoleComponent;
 }());
-exports.roleModule = roleModule;
-//# sourceMappingURL=app.module.js.map
+exports.RoleComponent = RoleComponent;
+//# sourceMappingURL=role.component.js.map

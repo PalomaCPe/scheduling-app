@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import { RoleComponent } from './role.component';
 
 @NgModule({
     imports: [ BrowserModule ],
-    declarations: [ AppComponent ],
-    bootstrap: [ AppComponent]
+    declarations: [ RoleComponent ],
+    bootstrap: [ RoleComponent]
 })
 
-export class AppModule { }
+export class roleModule { }

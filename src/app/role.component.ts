@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
     moduleId: module.id,
-    selector: 'ava-app' ,
-    templateUrl: 'professional.html'
+    selector: 'ava-role' ,
+    templateUrl: 'role.html'
 })
 
-export class ProfissionalComponent{ 
+export class RoleComponent{ 
     propriedade: string = "Hello world";
 }
