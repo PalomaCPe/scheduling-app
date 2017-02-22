@@ -17,10 +17,8 @@ var BookingModule = (function () {
     }
     BookingModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule,
-                router_1.RouterModule.forChild([
-                    { path: 'booking', component: booking_component_1.BookingComponent }
-                ])],
+            imports: [platform_browser_1.BrowserModule, router_1.RouterModule
+                    .forChild([{ path: 'booking', component: booking_component_1.BookingComponent }])],
             declarations: [booking_component_1.BookingComponent]
         }), 
         __metadata('design:paramtypes', [])

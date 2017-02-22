@@ -13,7 +13,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navBarHr">
             <ul class="nav navbar-nav">
-                <li><a routerLink="/booking">Alocacoes</a></li>
+                <li><a routerLink="/booking"        >Alocacoes</a></li>
+                <li><a routerLink='/project'        >Projetos</a ></li>
+                <li><a routerLink='/costumer'       >Clientes</a></li>
+                <li><a routerLink='/professional'   >Professionais</a></li>
+                <li><a routerLink='/role'           >Cargos</a></li>
             
             </ul>
         </div>
@@ -25,17 +29,14 @@
     <div class="row">
         <div class="col-md-offset-1 col-md-offset-1 col-sm-10 col-md-10 affix-content">
             <div class="container col-md-12">
-                <!-- DIRETIVA       PROPERTY BINDING            INTERPOLAÇÃO -->
+                 <!-- DIRETIVA       PROPERTY BINDING            INTERPOLAÇÃO -->
                 <h1 *ngIf="mostra"> <span [class]="[icon]" [style]="[meuestilo]"> </span> {{ pageName }} </h1>
                 <!--EVENT BINDING-->
                 <button (click)="interpolacao()" type="button" class="btn btn-primary btn-outline" >Interpolação</button>
                 <button (click)="propriedade()" type="button" class="btn btn-primary btn-outline" >Propriedade</button>
                 <button (click)="mostrar()" type="button" class="btn btn-primary btn-outline">Diretiva</button>
-            
-		<router-outlet></router-outlet>
-		</div>
+                <router-outlet></router-outlet>
+            </div>
         </div>
     </div>
 </div>
-
-

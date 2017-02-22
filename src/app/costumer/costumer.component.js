@@ -9,22 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Costumer = (function () {
-    function Costumer() {
-        this.name = 'costumer';
-        this.contact = '';
-        this.email = '';
-        this.sponsor = '';
+var CostumerComponent = (function () {
+    function CostumerComponent() {
     }
-    Costumer = __decorate([
+    CostumerComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'costumer',
             templateUrl: 'costumer.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], Costumer);
-    return Costumer;
+    ], CostumerComponent);
+    return CostumerComponent;
 }());
-exports.Costumer = Costumer;
+exports.CostumerComponent = CostumerComponent;
 //# sourceMappingURL=costumer.component.js.map

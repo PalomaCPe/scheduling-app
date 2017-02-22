@@ -10,19 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var router_1 = require('@angular/router');
 var costumer_component_1 = require('./costumer.component');
-var AppModule = (function () {
-    function AppModule() {
+var CostumerModule = (function () {
+    function CostumerModule() {
     }
-    AppModule = __decorate([
+    CostumerModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [costumer_component_1.Costumer],
-            bootstrap: [costumer_component_1.Costumer]
+            imports: [platform_browser_1.BrowserModule, router_1.RouterModule
+                    .forChild([{ path: 'costumer', component: costumer_component_1.CostumerComponent }])],
+            declarations: [costumer_component_1.CostumerComponent],
+            bootstrap: [costumer_component_1.CostumerComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], CostumerModule);
+    return CostumerModule;
 }());
-exports.AppModule = AppModule;
+exports.CostumerModule = CostumerModule;
 //# sourceMappingURL=costumer.module.js.map
