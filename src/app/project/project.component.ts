@@ -6,7 +6,7 @@ import { Component } from '@angular/core'
 	templateUrl: 'project.html'
 })
 
-export class project{
+export class Project{
 	id : string = '123';
 	name : string = '321';
 	start_date : string = 'p.josephclimber@prservicos.com.br';
