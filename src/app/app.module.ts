@@ -13,5 +13,6 @@ import { ProjectModule } from './project/project.module';
     imports: [ BrowserModule,  RouterModule.forRoot([{ path: "", redirectTo: "/", pathMatch: "full" }]), ProfessionalModule, ProjectModule ],
     declarations: [ AppComponent], 
     bootstrap: [ AppComponent]
+})
 
 export class AppModule { }
