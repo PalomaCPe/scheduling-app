@@ -6,7 +6,7 @@ import { RouterModule, Router } from '@angular/router';
 import { CustomerComponent }   from './customer.component';
 
 @NgModule({
-    imports: [BrowserModule, RouterModule.forChild([{path: 'bookings', component: CustomerComponent}]) ],
+    imports: [BrowserModule, RouterModule.forChild([{path: 'customers', component: CustomerComponent}]) ],
     exports: [],
     declarations: [CustomerComponent],
     providers: [CustomerComponent],
