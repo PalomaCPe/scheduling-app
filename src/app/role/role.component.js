@@ -9,20 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var professional_component_1 = require('./professional.component');
-var ProfissionalModule = (function () {
-    function ProfissionalModule() {
+var RoleComponent = (function () {
+    function RoleComponent() {
+        this.propriedade = "Hello world";
     }
-    ProfissionalModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [professional_component_1.ProfessionalComponent],
-            bootstrap: [professional_component_1.ProfessionalComponent]
+    RoleComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'ava-role',
+            templateUrl: 'role.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], ProfissionalModule);
-    return ProfissionalModule;
+    ], RoleComponent);
+    return RoleComponent;
 }());
-exports.ProfissionalModule = ProfissionalModule;
-//# sourceMappingURL=professional.module.js.map
+exports.RoleComponent = RoleComponent;
+//# sourceMappingURL=role.component.js.map

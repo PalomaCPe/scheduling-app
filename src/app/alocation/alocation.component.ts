@@ -8,6 +8,4 @@ import { Component } from '@angular/core';
 
 export class AlocationComponent{ 
     propriedade: string = "Hello world";
-    
-
 }
