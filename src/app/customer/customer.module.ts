@@ -8,4 +8,4 @@ import {CustomerComponent} from './customer.component';
     bootstrap: [CustomerComponent]
 })
 
-export class CustomerModule { }
+export class CustomerModule {}
