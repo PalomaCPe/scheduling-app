@@ -2,16 +2,17 @@
     <table class="table table-border-table-striped table-hover table-responsive">
         <thead>
             <tr>
-                <th>Data Inicio</th>
-                <th>Percentual</th>
+                <th>Nome</th>
+                <th>Data Início</th>
                 <th>Data Fim</th>
-                <th>Project</th>
-                <th>Profissional</th>
+                <th>WBS</th>
+                <th>Cliente</th>
+                <th>Sponsor</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let booking of bookings">
-                <th>{{ project.name | date }}</th>
+                <th>{{ project.name }}</th>
                 <th>{{ project.StartDate | date }}</th>
                 <th>{{ project.EndDate | date }}</th>
                 <th>{{ project.wbs }}</th>

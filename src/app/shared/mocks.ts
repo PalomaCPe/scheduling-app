@@ -1,4 +1,5 @@
 import { Booking } from '../booking/booking';
+import { Project } from '../Project/project';
 
 export const BOOKINGS: Booking[] = [
     {
@@ -8,9 +9,7 @@ export const BOOKINGS: Booking[] = [
         startDate: new Date(),
         endDate: new Date(),
         bookingPercentual: 100,
-        professional: {
-            name: 'Dogra'
-        },
+        professional: null,
         project: null
     },
     {
@@ -20,9 +19,7 @@ export const BOOKINGS: Booking[] = [
         startDate: new Date(),
         endDate: new Date(),
         bookingPercentual: 90,
-        professional: {
-            name: 'Salata'
-        },
+        professional: null,
         project: null
     },
     {
@@ -32,9 +29,20 @@ export const BOOKINGS: Booking[] = [
         startDate: new Date(),
         endDate: new Date(),
         bookingPercentual: 95,
-        professional: {
-            name: 'Talarida'
-        },
+        professional: null,
         project: null
+    }
+];
+
+export const PROJECT: Project[] = [
+    {
+
+        projectId: 1,
+        name: null,
+        StartDate: new Date(),
+        EndDate: new Date(),
+        wbs:  null,
+        customer: null,
+        sponsor: null   
     }
 ];
