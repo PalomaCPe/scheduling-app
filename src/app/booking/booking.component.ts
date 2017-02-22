@@ -1,16 +1,19 @@
 import { Component } from '@angular/core';
 import { Booking } from './booking';
 import { BOOKINGS } from '../shared/mocks';
+import { BookingService } from './booking.service';
 
 @Component({
     moduleId: module.id,
-    selector: 'ava-booking' ,
+    selector: 'ava-booking',
     templateUrl: 'booking.html'
 })
+export class BookingComponent {
+    constructor(
+        private _bookingService: BookingService
+    ) { }
 
-export class BookingComponent
-{    
     pageName: string = "Alocações";
 
-    bookings: Booking[] = BOOKINGS;
+    bookings: Booking[] = this._bookingService.getBookings();
 }

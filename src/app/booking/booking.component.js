@@ -9,11 +9,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var mocks_1 = require('../shared/mocks');
+var booking_service_1 = require('./booking.service');
 var BookingComponent = (function () {
-    function BookingComponent() {
+    function BookingComponent(_bookingService) {
+        this._bookingService = _bookingService;
         this.pageName = "Alocações";
-        this.bookings = mocks_1.BOOKINGS;
+        this.bookings = this._bookingService.getBookings();
     }
     BookingComponent = __decorate([
         core_1.Component({
@@ -21,7 +22,7 @@ var BookingComponent = (function () {
             selector: 'ava-booking',
             templateUrl: 'booking.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [booking_service_1.BookingService])
     ], BookingComponent);
     return BookingComponent;
 }());
