@@ -8,8 +8,7 @@ import { BookingComponent } from './booking.component';
 @NgModule({
     imports: [ BrowserModule,
     RouterModule.forChild([{path: 'bookings', component: BookingComponent}]) ],
-    declarations: [ BookingComponent ],
-    bootstrap: [ BookingComponent]
+    declarations: [ BookingComponent ]
 })
 
 export class BookingModule { }

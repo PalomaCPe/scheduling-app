@@ -12,8 +12,8 @@ import {RoleModule } from './role/role.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
-    imports: [ BrowserModule, BookingModule, CustomerModule, ProfessionalModule, ProjectModule, RoleModule, RouterModule
-    .forRoot([{ path: '', redirectTo: "/", pathMatch:'full'}])],
+    imports: [ BrowserModule, BookingModule, CustomerModule, ProfessionalModule, ProjectModule, RoleModule, 
+    RouterModule.forRoot([{ path: '', redirectTo: "/", pathMatch:'full'}])],
     declarations: [ AppComponent ],
     bootstrap: [ AppComponent]
 })

@@ -13,7 +13,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navBarHr">
             <ul class="nav navbar-nav">
-                <li><a routerlink='/bookings'>Alocações</a></li>
+                <li><a routerLink="/bookings">Alocações</a></li>
+                <li><a routerLink="/clients">Clientes</a></li>
+                <li><a routerLink="/professionals">Profissional</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -30,7 +32,9 @@
                 <button (click)="interpolacao()" type="button" class="btn btn-primary btn-outline" >Interpolação</button>
                 <button (click)="propriedade()" type="button" class="btn btn-primary btn-outline" >Propriedade</button>
                 <button (click)="mostrar()" type="button" class="btn btn-primary btn-outline">Diretiva</button>
-            </div>
+Inicio
+                <router-outlet></router-outlet>
+      Fim      </div>
         </div>
     </div>
 </div>
