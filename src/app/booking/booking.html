@@ -1,0 +1,26 @@
+<div class="page-header">
+    <h3><span class="glyphicon glyphicon-calendar"></span>{{ pageName }}</h3>
+</div>
+
+<div class="page-content">
+    <table class="table table-borded table-striped table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>Data Início</th>
+                <th>Data Fim</th>
+                <th>Percentual</th>
+                <th>Projeto</th>
+                <th>Professional</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let booking of bookings">
+                <td>{{booking.starDate | date:'dd/MM/yyyy'}}</td>
+                <td>{{booking.endDate | date:'dd/MM/yyyy'}}</td>
+                <td>{{booking.percentual}}</td>
+                <td>{{booking.projectId}}</td>
+                <td>{{booking.professionalId}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
