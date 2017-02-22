@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BookingComponent } from './booking.component';
 import { RouterModule } from '@angular/router';
+import { BookingService } from './booking.service';
 
 @NgModule({
     imports: [BrowserModule,
@@ -9,7 +10,8 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
         { path: 'bookings', component: BookingComponent}
     ])],
-    declarations: [ BookingComponent ]
+    declarations: [ BookingComponent],
+    providers: [BookingService]
 })
 
 export class BookingModule {  }
