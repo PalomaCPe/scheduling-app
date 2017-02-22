@@ -12,8 +12,7 @@ var core_1 = require('@angular/core');
 var mocks_1 = require('../shared/mocks');
 var BookingComponent = (function () {
     function BookingComponent() {
-        this.project = "";
-        this.propriedade = "";
+        this.pageName = "Alocações";
         this.bookings = mocks_1.BOOKINGS;
     }
     BookingComponent = __decorate([

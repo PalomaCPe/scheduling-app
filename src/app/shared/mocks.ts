@@ -8,7 +8,9 @@ export const BOOKINGS: Booking[] = [
         startDate: new Date(),
         endDate: new Date(),
         bookingPercentual: 100,
-        professional: null,
+        professional: {
+            name: 'Dogra'
+        },
         project: null
     },
     {
@@ -18,9 +20,11 @@ export const BOOKINGS: Booking[] = [
         startDate: new Date(),
         endDate: new Date(),
         bookingPercentual: 90,
-        professional: null,
+        professional: {
+            name: 'Salata'
+        },
         project: null
-    }, 
+    },
     {
         id: 3,
         projectId: 3,
@@ -28,7 +32,9 @@ export const BOOKINGS: Booking[] = [
         startDate: new Date(),
         endDate: new Date(),
         bookingPercentual: 95,
-        professional: null,
+        professional: {
+            name: 'Talarida'
+        },
         project: null
     }
 ];
