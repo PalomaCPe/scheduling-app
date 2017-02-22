@@ -1,8 +1,8 @@
 "use strict";
-var Profissional = (function () {
-    function Profissional() {
+var Professional = (function () {
+    function Professional() {
     }
-    return Profissional;
+    return Professional;
 }());
-exports.Profissional = Profissional;
+exports.Professional = Professional;
 //# sourceMappingURL=professional.js.map

@@ -17,26 +17,12 @@ var ProfissionalModule = (function () {
     ProfissionalModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
-            declarations: [professional_component_1.ProfissionalComponent],
-            bootstrap: [professional_component_1.ProfissionalComponent]
+            declarations: [professional_component_1.ProfessionalComponent],
+            bootstrap: [professional_component_1.ProfessionalComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], ProfissionalModule);
     return ProfissionalModule;
 }());
 exports.ProfissionalModule = ProfissionalModule;
-var ProfessionalModule = (function () {
-    function ProfessionalModule() {
-    }
-    ProfessionalModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [professional_component_1.ProfessionalComponent],
-            bootstrap: [professional_component_1.ProfessionalComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ProfessionalModule);
-    return ProfessionalModule;
-}());
-exports.ProfessionalModule = ProfessionalModule;
 //# sourceMappingURL=professional.module.js.map

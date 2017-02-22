@@ -1,4 +1,4 @@
-export class Profissional{
+export class Professional{
     pid: number; 
     eid: number;
     nome: String;
