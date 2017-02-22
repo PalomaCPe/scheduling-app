@@ -10,8 +10,7 @@ import { BOOKINGS } from '../shared/mocks';
 
 export class BookingComponent
 {    
-    project: string = "";
-    propriedade: string = "";
+    pageName: string = "Alocações";
 
     bookings: Booking[] = BOOKINGS;
 }
