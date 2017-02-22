@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
     templateUrl: 'customer.html'
 })
 
-export class AppComponent{ 
+export class customerComponent { 
 
 
-textoInicial: String = "Oi, eu sou Goku"
+ propriedade: string = "";  
 
 }
 

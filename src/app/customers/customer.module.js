@@ -11,18 +11,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var customer_component_1 = require('./customer.component');
-var AppModule = (function () {
-    function AppModule() {
+var customerModule = (function () {
+    function customerModule() {
     }
-    AppModule = __decorate([
+    customerModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
-            declarations: [customer_component_1.AppComponent],
-            bootstrap: [customer_component_1.AppComponent]
+            declarations: [customer_component_1.customerComponent],
+            bootstrap: [customer_component_1.customerComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], customerModule);
+    return customerModule;
 }());
-exports.AppModule = AppModule;
+exports.customerModule = customerModule;
 //# sourceMappingURL=customer.module.js.map

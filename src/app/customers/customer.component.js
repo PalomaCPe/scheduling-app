@@ -9,19 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.textoInicial = "Oi, eu sou Goku";
+var customerComponent = (function () {
+    function customerComponent() {
+        this.propriedade = "";
     }
-    AppComponent = __decorate([
+    customerComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'ava-app',
             templateUrl: 'customer.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], customerComponent);
+    return customerComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.customerComponent = customerComponent;
 //# sourceMappingURL=customer.component.js.map
