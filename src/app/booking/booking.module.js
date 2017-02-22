@@ -11,21 +11,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var router_1 = require('@angular/router');
-var booking_module_1 = require('./booking/booking.module');
-var app_component_1 = require('./app.component');
-var AppModule = (function () {
-    function AppModule() {
+var booking_component_1 = require('./booking.component');
+var BookingModule = (function () {
+    function BookingModule() {
     }
-    AppModule = __decorate([
+    BookingModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, booking_module_1.BookingModule, router_1.RouterModule
-                    .forRoot([{ path: '', redirectTo: '/', pathMatch: 'full' }])],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
+            imports: [platform_browser_1.BrowserModule,
+                router_1.RouterModule.forChild([
+                    { path: 'booking', component: booking_component_1.BookingComponent }
+                ])],
+            declarations: [booking_component_1.BookingComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], BookingModule);
+    return BookingModule;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.BookingModule = BookingModule;
+//# sourceMappingURL=booking.module.js.map

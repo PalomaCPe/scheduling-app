@@ -9,23 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var router_1 = require('@angular/router');
-var booking_module_1 = require('./booking/booking.module');
-var app_component_1 = require('./app.component');
-var AppModule = (function () {
-    function AppModule() {
+var Project = (function () {
+    function Project() {
+        this.id = '123';
+        this.name = '321';
+        this.start_date = 'p.josephclimber@prservicos.com.br';
+        this.end_date = 'joseph climber';
+        this.wbs = 'josephclimber@mail.com';
+        this.customer = '2345678';
+        this.sponsor = '2345678';
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, booking_module_1.BookingModule, router_1.RouterModule
-                    .forRoot([{ path: '', redirectTo: '/', pathMatch: 'full' }])],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
+    Project = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'project',
+            templateUrl: 'project.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], Project);
+    return Project;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.Project = Project;
+//# sourceMappingURL=project.component.js.map

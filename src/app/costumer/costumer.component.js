@@ -9,23 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var router_1 = require('@angular/router');
-var booking_module_1 = require('./booking/booking.module');
-var app_component_1 = require('./app.component');
-var AppModule = (function () {
-    function AppModule() {
+var Costumer = (function () {
+    function Costumer() {
+        this.name = 'costumer';
+        this.contact = '';
+        this.email = '';
+        this.sponsor = '';
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, booking_module_1.BookingModule, router_1.RouterModule
-                    .forRoot([{ path: '', redirectTo: '/', pathMatch: 'full' }])],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
+    Costumer = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'costumer',
+            templateUrl: 'costumer.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], Costumer);
+    return Costumer;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.Costumer = Costumer;
+//# sourceMappingURL=costumer.component.js.map

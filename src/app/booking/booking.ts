@@ -1,11 +1,3 @@
-import { Component } from '@angular/core';
-
-@Component({
-    moduleId: module.id,
-    selector: 'booking' ,
-    templateUrl: 'boooking.html'
-})
-
 export class BookingComponent{ 
      id : number;
      start_date : Date;
@@ -13,5 +5,4 @@ export class BookingComponent{
      booking_percentual : number;
      profissional : string;
      project : string;
-       
 }

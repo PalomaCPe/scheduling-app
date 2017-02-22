@@ -13,6 +13,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navBarHr">
             <ul class="nav navbar-nav">
+                <li><a routerLink="/booking">Alocacoes</a></li>
+            
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -24,6 +26,7 @@
         <div class="col-md-offset-1 col-md-offset-1 col-sm-10 col-md-10 affix-content">
             <div class="container col-md-12">
                 <h1> {{ propriedade }} </h1>
+                <router-outlet></router-outlet>
             </div>
         </div>
     </div>

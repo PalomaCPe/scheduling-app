@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { RouterModule, Router } from '@angular/router' 
 import { BookingComponent } from './booking.component';
 
 @NgModule({
-    imports: [ BrowserModule ],
-    declarations: [ BookingComponent ],
-    bootstrap: [ BookingComponent]
+    imports: [ BrowserModule,
+    RouterModule.forChild([
+        { path: 'booking', component: BookingComponent}
+    ]) ],
+    declarations: [ BookingComponent ]
 })
 
-export class bookingModule { }
+export class BookingModule { }
