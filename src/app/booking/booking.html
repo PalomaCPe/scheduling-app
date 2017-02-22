@@ -1,1 +1,22 @@
-<h1>Booking</h1>
+<div class="page-content">
+    <table class="table table-border-table-striped table-hover">
+        <thead>
+            <tr>
+                <td>Data Inicio</td>
+                <td>Data Fim</td>
+                <td>Percentual</td>
+                <td>Project</td>
+                <td>Profissional</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let booking of bookings">
+                <td>{{ booking.startDate | date }}</td>
+                <td>{{ booking.endDate | date }}</td>
+                <td>{{ booking.bookingPercentual }}</td>
+                <td>{{ booking.professional }}</td>
+                <td>{{ booking.project }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

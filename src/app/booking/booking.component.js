@@ -9,10 +9,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var mocks_1 = require('../shared/mocks');
 var BookingComponent = (function () {
     function BookingComponent() {
         this.project = "";
         this.propriedade = "";
+        this.bookings = mocks_1.BOOKINGS;
     }
     BookingComponent = __decorate([
         core_1.Component({
