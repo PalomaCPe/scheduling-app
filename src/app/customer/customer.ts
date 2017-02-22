@@ -1,4 +1,4 @@
-//import {  } from '../Professional/';
+import { Professional } from '../Professional/professional';
 
 export class Customer {
 
@@ -6,7 +6,7 @@ export class Customer {
     name: string;
     contact: string;
     email: string;
-    sponsor: string;
+    sponsor: Professional;
 
     constructor() { }
 
