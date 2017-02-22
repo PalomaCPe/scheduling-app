@@ -1,8 +1,8 @@
 "use strict";
-var BookingComponent = (function () {
-    function BookingComponent() {
+var Booking = (function () {
+    function Booking() {
     }
-    return BookingComponent;
+    return Booking;
 }());
-exports.BookingComponent = BookingComponent;
+exports.Booking = Booking;
 //# sourceMappingURL=booking.js.map

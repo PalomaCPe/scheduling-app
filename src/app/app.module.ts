@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// ROTA
+import { RouterModule, Router } from '@angular/router';
 
-import { RouterModule, Router } from '@angular/router'
-import { BookingModule } from './booking/booking.module'
-import { CostumerModule } from './costumer/costumer.module'
 import { AppComponent } from './app.component';
+import { BookingModule } from './booking/booking.module';
 
-@NgModule({
-    imports: [ BrowserModule, BookingModule, RouterModule
+@NgModule({                                     //ROTA
+    imports: [BrowserModule, BookingModule, RouterModule
         .forRoot([{ path: '', redirectTo: '/', pathMatch: 'full' }])],
-    declarations: [ AppComponent ],
-    bootstrap: [ AppComponent]
+    declarations: [AppComponent],
+    bootstrap: [AppComponent]
 })
 
-export class AppModule { 
-    
-}
+export class AppModule { }
