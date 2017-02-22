@@ -1,8 +1,8 @@
-export class ProComponent{
+export class Profissional{
     pid: number; 
     eid: number;
-    nome: string;
-    email: string;
-    cargo: string;
-    telefone: string;
+    nome: String;
+    email: String;
+    cargo: String;
+    telefone: String;
 }

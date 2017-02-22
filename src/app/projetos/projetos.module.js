@@ -10,19 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
-var role_component_1 = require('./role.component');
-var roleModule = (function () {
-    function roleModule() {
+var projetos_component_1 = require('./projetos.component');
+var AppModule = (function () {
+    function AppModule() {
     }
-    roleModule = __decorate([
+    AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
-            declarations: [role_component_1.RoleComponent],
-            bootstrap: [role_component_1.RoleComponent]
+            declarations: [projetos_component_1.AppComponent],
+            bootstrap: [projetos_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], roleModule);
-    return roleModule;
+    ], AppModule);
+    return AppModule;
 }());
-exports.roleModule = roleModule;
-//# sourceMappingURL=role.module.js.map
+exports.AppModule = AppModule;
+//# sourceMappingURL=projetos.module.js.map

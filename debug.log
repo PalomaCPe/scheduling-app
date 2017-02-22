@@ -1,2 +1,5 @@
 [0220/183532:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
 [0220/183532:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0220/203713:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\settings.dat: Acesso negado. (0x5)
+[0220/203713:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[0220/203713:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\settings.dat: Acesso negado. (0x5)

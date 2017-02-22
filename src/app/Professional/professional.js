@@ -1,8 +1,8 @@
 "use strict";
-var ProComponent = (function () {
-    function ProComponent() {
+var Profissional = (function () {
+    function Profissional() {
     }
-    return ProComponent;
+    return Profissional;
 }());
-exports.ProComponent = ProComponent;
+exports.Profissional = Profissional;
 //# sourceMappingURL=professional.js.map

@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
     templateUrl: 'professional.html'
 })
 
-export class ProfissionalComponent{ 
+export class ProfessionalComponent{ 
     propriedade: string = "Hello world";
 }
