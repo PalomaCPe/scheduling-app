@@ -13,12 +13,14 @@ var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var router_1 = require('@angular/router');
 var professional_module_1 = require('./professional/professional.module');
+var project_module_1 = require('./project/project.module');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot([{ path: "", redirectTo: "/", pathMatch: "full" }]), professional_module_1.ProfessionalModule],
+            imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot([{ path: "", redirectTo: "/", pathMatch: "full" }]),
+                professional_module_1.ProfessionalModule, project_module_1.ProjectModule],
             declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 

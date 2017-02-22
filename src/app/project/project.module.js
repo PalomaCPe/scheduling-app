@@ -10,13 +10,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var router_1 = require('@angular/router');
 var project_component_1 = require('./project.component');
 var ProjectModule = (function () {
     function ProjectModule() {
     }
     ProjectModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
+            imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forChild([
+                    { path: 'projects', component: project_component_1.ProjectComponent }
+                ])],
             declarations: [project_component_1.ProjectComponent],
             bootstrap: [project_component_1.ProjectComponent]
         }), 

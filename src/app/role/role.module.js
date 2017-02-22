@@ -11,12 +11,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var role_component_1 = require('./role.component');
+// ROTA
+var router_1 = require('@angular/router');
 var RoleModule = (function () {
     function RoleModule() {
     }
     RoleModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
+            imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forChild([{ path: 'roles', component: role_component_1.RoleComponent }]) /*ROTA*/],
             declarations: [role_component_1.RoleComponent],
             bootstrap: [role_component_1.RoleComponent]
         }), 
