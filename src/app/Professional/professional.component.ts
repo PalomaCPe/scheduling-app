@@ -5,3 +5,5 @@ import { Component } from '@angular/core';
     selector: 'ava-app' ,
     templateUrl: 'professional.html'
 })
+
+export class ProfessionalComponent{}
