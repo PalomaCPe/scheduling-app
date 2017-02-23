@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { BOOKINGS } from '../shared/mocks';
+
 import { Booking } from './booking';
 
+import { BOOKINGS } from '../shared/mocks';
+
 @Injectable()
-export class BookingService {
-
-    getBookings(): Booking[] {
-        return BOOKINGS;
-    }
-
+export class BookingService{
+ getBookings(): Booking[]{
+     return BOOKINGS;
+ }   
 }

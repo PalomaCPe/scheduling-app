@@ -4,6 +4,5 @@ export class Role
     name: string;
     brc: string;
     description:string;
-    level:number;   
-
+    level:number;
 }
