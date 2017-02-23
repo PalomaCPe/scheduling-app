@@ -1,14 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { Project } from './project.component';
+import { RouterModule, Router } from '@angular/router';
+
+import { ProjectComponent } from './project.component';
+import { ProjectService } from './project.service'
 
 @NgModule({
-    imports: [ BrowserModule ],
-    declarations: [ Project ],
-    bootstrap: [ Project]
+    imports: [ BrowserModule, RouterModule
+    .forChild([
+        { path: 'project', component: ProjectComponent}
+    ]) ],
+    declarations: [ ProjectComponent ],
+    bootstrap: [ ProjectComponent],
+    providers: [ProjectService],
 })
 
-export class ProfessionalsModule{
+export class ProjectModule{
 
 }

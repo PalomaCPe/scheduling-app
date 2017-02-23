@@ -6,13 +6,15 @@ import { RouterModule, Router } from '@angular/router';
 import { BookingComponent } from './booking.component';
 import { BookingService } from './booking.service';
 
+import { PercentualPipe} from '../shared/percentualPipe'
+
 @NgModule({
     imports: [BrowserModule,
     // ROTA
     RouterModule.forChild([
         { path: 'booking', component: BookingComponent}
     ])],
-    declarations: [ BookingComponent ],
+    declarations: [ BookingComponent, PercentualPipe ],
     providers: [BookingService],
 })
 

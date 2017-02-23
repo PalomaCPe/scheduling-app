@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Costumer } from './Costumer';
 
 @Component({
     moduleId: module.id,
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
     templateUrl: 'costumer.html'
 })
 
-export class CostumerComponent{ }
+export class CostumerComponent{
+    propriedade: string = 'Costumer';
+ }
