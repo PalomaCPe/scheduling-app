@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {CustomerComponent} from './customer.component';
-import {RouterModule, Router} from '@angular/router'
+import { CustomerComponent } from './customer.component';
+import { RouterModule, Router } from '@angular/router'
 
 @NgModule({
-    imports: [ BrowserModule,
-    // ROTA
-    RouterModule.forChild([
-        { path: 'customer', component: CustomerComponent }
-    ])],
+    imports: [BrowserModule,
+        // ROTA
+        RouterModule.forChild([
+            { path: 'customers', component: CustomerComponent }
+        ])],
     declarations: [CustomerComponent]
 })
 
-export class CustomerModule {}
+export class CustomerModule { }
