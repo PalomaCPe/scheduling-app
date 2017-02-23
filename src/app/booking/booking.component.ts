@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Booking } from './booking';
 import { BOOKINGS } from '../shared/mocks';
 
+import { BookingService } from './booking.service';
+
 @Component({
     moduleId: module.id,
     selector: 'ava-booking' ,
@@ -10,8 +12,12 @@ import { BOOKINGS } from '../shared/mocks';
 
 export class BookingComponent
 {    
+    constructor(private _bookingService: BookingService)
+    {
+        
+    }
     project: string = "";
     propriedade: string = "";
 
-    bookings: Booking[] = BOOKINGS;
+    bookings: Booking[] = this._bookingService.getBookings();
 }

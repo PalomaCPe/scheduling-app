@@ -1,4 +1,5 @@
 import { Booking } from '../booking/booking';
+import { Customer } from '../customer/customer';
 
 export const BOOKINGS: Booking[] = [
     {
@@ -20,7 +21,7 @@ export const BOOKINGS: Booking[] = [
         bookingPercentual: 90,
         professional: null,
         project: null
-    }, 
+    },
     {
         id: 3,
         projectId: 3,
@@ -30,5 +31,29 @@ export const BOOKINGS: Booking[] = [
         bookingPercentual: 95,
         professional: null,
         project: null
+    }
+];
+
+export const CUSTOMERS: Customer[] = [
+    {
+        id: 1,
+        name: 'Talarico',
+        contact: 'talala',
+        email: 'r.talarico.gomes@avanade.com',
+        sponsor: null
+    },
+    {
+        id: 2,
+        name: 'Geraldo',
+        contact: 'gege',
+        email: 'geraldo.f.neto@accenture.com',
+        sponsor: null
+    },
+    {
+        id: 3,
+        name: 'Salata',
+        contact: 'sasá',
+        email: 'lucas.ramalho.salata@avanade.com',
+        sponsor: null
     }
 ];
