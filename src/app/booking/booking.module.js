@@ -14,6 +14,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 var router_1 = require('@angular/router');
 var booking_component_1 = require('./booking.component');
 var booking_service_1 = require('./booking.service');
+var percentualPipe_1 = require('../shared/percentualPipe');
 var BookingModule = (function () {
     function BookingModule() {
     }
@@ -24,7 +25,7 @@ var BookingModule = (function () {
                 router_1.RouterModule.forChild([
                     { path: 'bookings', component: booking_component_1.BookingComponent }
                 ])],
-            declarations: [booking_component_1.BookingComponent],
+            declarations: [booking_component_1.BookingComponent, percentualPipe_1.PercentualPipe],
             providers: [booking_service_1.BookingService]
         }), 
         __metadata('design:paramtypes', [])
