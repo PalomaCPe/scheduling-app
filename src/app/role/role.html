@@ -1,1 +1,24 @@
-<h1>{{ roleLabel }} </h1>
+<div class="page-header">
+    <h3> <span class="glyphicon glyphicon-calendar"></span> {{ roleLabel }} </h3>
+</div>
+
+<div class="page-content">
+    <table class="table table-borded table-striped table-hover table-responsive">
+        <thead>
+            <tr>
+                <th> Nome</th>
+                <th> BRC </th>
+                <th> Descrição </th>
+                <th> Nivel </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let role of roles">
+                <td> {{ role.nome }} </td>
+                <td> {{ role.brc }} </td>
+                <td> {{ role.descricao }} </td>
+                <td> {{ role.nivel }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

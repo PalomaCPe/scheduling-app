@@ -1,8 +1,8 @@
 "use strict";
-var role = (function () {
-    function role() {
+var Role = (function () {
+    function Role() {
     }
-    return role;
+    return Role;
 }());
-exports.role = role;
+exports.Role = Role;
 //# sourceMappingURL=role.js.map

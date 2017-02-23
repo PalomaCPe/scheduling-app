@@ -1,7 +1,7 @@
 import { Booking } from '../booking/booking';
+import { Role } from '../role/role';
 
 export const BOOKINGS: Booking[] = [
-
     {
         id: 1,
         startDate: new Date('2017-03-11T02:00:00.0002'),
@@ -35,4 +35,14 @@ export const BOOKINGS: Booking[] = [
         professional: null,
     },
 
+];
+
+export const ROLES: Role[] = [
+    {
+        id: 1,
+        nome: 'SA',
+        brc: '5632455',
+        descricao: 'System Analyst',
+        nivel: 9,
+    }
 ];

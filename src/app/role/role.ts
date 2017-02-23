@@ -1,4 +1,4 @@
-export class role{
+export class Role{
     id: number;
     nome: string;
     brc: string;

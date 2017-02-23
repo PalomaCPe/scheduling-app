@@ -11,8 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var role_component_1 = require('./role.component');
-// ROTA
 var router_1 = require('@angular/router');
+var role_service_1 = require('./role.service');
 var RoleModule = (function () {
     function RoleModule() {
     }
@@ -20,7 +20,7 @@ var RoleModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forChild([{ path: 'roles', component: role_component_1.RoleComponent }]) /*ROTA*/],
             declarations: [role_component_1.RoleComponent],
-            bootstrap: [role_component_1.RoleComponent]
+            providers: [role_service_1.RoleService]
         }), 
         __metadata('design:paramtypes', [])
     ], RoleModule);

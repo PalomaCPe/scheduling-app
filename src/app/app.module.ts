@@ -8,11 +8,12 @@ import { AppComponent } from './app.component';
 import { BookingModule } from './booking/booking.module';
 import { ProfessionalModule } from './professional/professional.module';
 import { ProjectModule } from './project/project.module';
-
-
+import { RoleModule } from './role/role.module';
+import { CustomerModule } from './customer/customer.module';
 
 @NgModule({
-    imports: [ BrowserModule,  RouterModule.forRoot([{ path: "", redirectTo: "/", pathMatch: "full" }]), ProfessionalModule, ProjectModule, BookingModule ],
+    imports: [ BrowserModule,  RouterModule.forRoot([{ path: "", redirectTo: "/", pathMatch: "full" }]), 
+               ProfessionalModule, ProjectModule, BookingModule, RoleModule, CustomerModule ],
     declarations: [ AppComponent], 
     bootstrap: [ AppComponent]
 })

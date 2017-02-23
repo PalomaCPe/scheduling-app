@@ -9,9 +9,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var role_service_1 = require('./role.service');
 var RoleComponent = (function () {
-    function RoleComponent() {
-        this.roleLabel = "Role";
+    function RoleComponent(_roleService) {
+        this._roleService = _roleService;
+        this.roleLabel = "Página de cargos";
+        this.roles = this._roleService.getRoles();
     }
     RoleComponent = __decorate([
         core_1.Component({
@@ -19,7 +22,7 @@ var RoleComponent = (function () {
             selector: 'role-app',
             templateUrl: 'role.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [role_service_1.RoleService])
     ], RoleComponent);
     return RoleComponent;
 }());

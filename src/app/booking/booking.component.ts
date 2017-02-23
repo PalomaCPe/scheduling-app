@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Booking } from './booking';
-// import { BOOKINGS } from '../shared/mock';
 import { BookingService } from './booking.service';
+// import { BOOKINGS } from '../shared/mock'; <-- MOCK -->
 
 @Component({
     moduleId: module.id,
@@ -16,5 +16,5 @@ export class BookingComponent {
 
     propriedade: string = 'Página de alocações';
     bookings: Booking[] = this._bookingService.getBookings();
-    // bookings: Booking[] = BOOKINGS;
+    // bookings: Booking[] = BOOKINGS; <-- MOCK -->
 }
