@@ -13,6 +13,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 //ROTA
 var router_1 = require('@angular/router');
 var booking_component_1 = require('./booking.component');
+var booking_detail_component_1 = require('./booking-detail.component');
 var booking_service_1 = require('./booking.service');
 var percentualPipe_1 = require('../shared/percentualPipe');
 var BookingModule = (function () {
@@ -23,9 +24,10 @@ var BookingModule = (function () {
             imports: [platform_browser_1.BrowserModule,
                 // ROTA
                 router_1.RouterModule.forChild([
-                    { path: 'bookings', component: booking_component_1.BookingComponent }
+                    { path: 'bookings', component: booking_component_1.BookingComponent },
+                    { path: 'bookings/:id', component: booking_detail_component_1.BookingDetailComponent }
                 ])],
-            declarations: [booking_component_1.BookingComponent, percentualPipe_1.PercentualPipe],
+            declarations: [booking_component_1.BookingComponent, booking_detail_component_1.BookingDetailComponent, percentualPipe_1.PercentualPipe],
             providers: [booking_service_1.BookingService]
         }), 
         __metadata('design:paramtypes', [])

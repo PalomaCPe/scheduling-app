@@ -14,6 +14,7 @@
                 <th>Percentual</th>
                 <th>Project</th>
                 <th>Profissional</th>
+                <th>Detalhe</th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +24,7 @@
                 <td>{{ booking.bookingPercentual | percentual }}</td>
                 <td>{{ booking.professional }}</td>
                 <td>{{ booking.project }}</td>
+                <td><span [routerLink]="['/bookings', booking.id]">Detalhe</span></td>
             </tr>
         </tbody>
     </table>
