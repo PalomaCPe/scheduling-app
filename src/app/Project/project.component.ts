@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Project } from './project';
+import { PROJECTS } from '../shared/mocks';
 
 @Component({
     moduleId: module.id,
@@ -9,4 +11,6 @@ import { Component } from '@angular/core';
 export class ProjectComponent
 {
     propriedade: string = "Project";
+    project: Project[];
+    PROJECTS = Project;
 }

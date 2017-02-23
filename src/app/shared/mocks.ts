@@ -1,7 +1,5 @@
 import { Booking } from '../booking/booking';
-
 import { Customer } from '../customer/customer';
-
 import { Project } from '../Project/project';
 import { Role } from '../role/Role';
 
@@ -63,14 +61,24 @@ export const CUSTOMERS: Customer[] = [
     }
 ];
 
-export const PROJECT: Project[] = [
+export const PROJECTS: Project[] = [
     {
 
         projectId: 1,
-        name: null,
+        name: 'teste1',
         StartDate: new Date(),
         EndDate: new Date(),
-        wbs:  null,
+        wbs:  '12345',
+        customer: null,
+        sponsor: null   
+    },
+
+    {
+        projectId: 2,
+        name: 'teste',
+        StartDate: new Date(),
+        EndDate: new Date(),
+        wbs:  '12345',
         customer: null,
         sponsor: null   
     }

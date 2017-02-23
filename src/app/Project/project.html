@@ -1,4 +1,8 @@
 <div class="page-content">
+     <h3>
+        <span class="glyphicon glyphicon-list-alt"></span> {{ pageName }}
+        Projeto
+    </h3>
     <table class="table table-border-table-striped table-hover table-responsive">
         <thead>
             <tr>
@@ -11,10 +15,10 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let booking of bookings">
+            <tr *ngFor="let project of projects">
                 <th>{{ project.name }}</th>
-                <th>{{ project.StartDate | date }}</th>
-                <th>{{ project.EndDate | date }}</th>
+                <th>{{ project.StartDate | date:'dd/MM/yyyy' }}</th>
+                <th>{{ project.EndDate | date:'dd/MM/yyyy' }}</th>
                 <th>{{ project.wbs }}</th>
                 <th>{{ project.customer }}</th>
                 <th>{{ project.sponsor }}</th>
