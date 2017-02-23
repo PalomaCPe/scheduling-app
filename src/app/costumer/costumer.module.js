@@ -19,8 +19,7 @@ var CostumerModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, router_1.RouterModule
                     .forChild([{ path: 'costumer', component: costumer_component_1.CostumerComponent }])],
-            declarations: [costumer_component_1.CostumerComponent],
-            bootstrap: [costumer_component_1.CostumerComponent]
+            declarations: [costumer_component_1.CostumerComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], CostumerModule);

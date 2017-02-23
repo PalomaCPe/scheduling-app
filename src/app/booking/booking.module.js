@@ -13,6 +13,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 //ROTA
 var router_1 = require('@angular/router');
 var booking_component_1 = require('./booking.component');
+var bookings_services_1 = require('./bookings.services');
 var BookingModule = (function () {
     function BookingModule() {
     }
@@ -21,9 +22,10 @@ var BookingModule = (function () {
             imports: [platform_browser_1.BrowserModule,
                 // ROTA
                 router_1.RouterModule.forChild([
-                    { path: 'bookings', component: booking_component_1.BookingComponent }
+                    { path: 'booking', component: booking_component_1.BookingComponent }
                 ])],
-            declarations: [booking_component_1.BookingComponent]
+            declarations: [booking_component_1.BookingComponent],
+            providers: [bookings_services_1.BookingService]
         }), 
         __metadata('design:paramtypes', [])
     ], BookingModule);

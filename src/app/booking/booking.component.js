@@ -9,9 +9,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var bookings_services_1 = require('./bookings.services');
 var BookingComponent = (function () {
-    function BookingComponent() {
-        this.propriedade = 'Página de alocações';
+    function BookingComponent(_bookingService) {
+        this._bookingService = _bookingService;
+        this.pageNme = 'alocaçoes';
+        this.bookings = this._bookingService.getBookings();
     }
     BookingComponent = __decorate([
         core_1.Component({
@@ -19,7 +22,7 @@ var BookingComponent = (function () {
             selector: 'booking',
             templateUrl: 'boooking.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [bookings_services_1.BookingService])
     ], BookingComponent);
     return BookingComponent;
 }());

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { Booking } from './booking';
 
+import { BookingService } from './bookings.services';
+
 
 	@Component({
 	moduleId: module.id,
@@ -10,5 +12,12 @@ import { Booking } from './booking';
 })
 
 export class BookingComponent {
-    propriedade: string = 'Página de alocações';
+
+	constructor(
+		private _bookingService: BookingService
+	) {}
+
+	pageNme: string = 'alocaçoes';
+	bookings: Booking[] = this._bookingService.getBookings();
+
 }
