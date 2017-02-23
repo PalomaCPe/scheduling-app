@@ -11,23 +11,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.propriedade = "";
+        this.mostra = true;
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'ava-app',
-            templateUrl: 'app.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
-}());
-exports.AppComponent = AppComponent;
-var AppComponent = (function () {
-    function AppComponent() {
-        this.propriedade = "";
-    }
+    AppComponent.prototype.interpolacao = function () {
+        this.mostra = true;
+        this.pageName = "Nome da Página";
+    };
+    AppComponent.prototype.propriedade = function () {
+        this.mostra = true;
+        this.icon = "glyphicon glyphicon-calendar";
+    };
+    AppComponent.prototype.mostrar = function () {
+        if (this.mostra)
+            this.mostra = false;
+        else
+            this.mostra = true;
+    };
     AppComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

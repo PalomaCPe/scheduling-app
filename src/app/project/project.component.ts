@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     templateUrl: 'app.html'
 })
 
-export class AppComponent{ 
-    propriedade: string = ' Teste aki  ';
+export class ProjectComponent{ 
+    propriedade: string = "";
 
 }

@@ -9,22 +9,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var booking_service_1 = require('./booking.service');
-var BookingComponent = (function () {
-    function BookingComponent(_bookingService) {
+var BookingDetailComponent = (function () {
+    function BookingDetailComponent(_route, _bookingService) {
+        this._route = _route;
         this._bookingService = _bookingService;
-        this.pageName = "Alocações";
-        this.bookings = this._bookingService.getBookings();
+        this.pageName = 'Alocação';
     }
-    BookingComponent = __decorate([
+    BookingDetailComponent.prototype.ngOnInit = function () {
+        this.getBooking();
+    };
+    BookingDetailComponent.prototype.getBooking = function () {
+        var _this = this;
+        this._route.params.forEach(function (param) {
+            _this.id = param["id"];
+        });
+        this.booking = this._bookingService.getBooking(this.id);
+    };
+    BookingDetailComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'ava-bok-app',
-            templateUrl: 'booking.html'
+            templateUrl: 'booking-detail.html'
         }), 
-        __metadata('design:paramtypes', [booking_service_1.BookingService])
-    ], BookingComponent);
-    return BookingComponent;
+        __metadata('design:paramtypes', [router_1.ActivatedRoute, booking_service_1.BookingService])
+    ], BookingDetailComponent);
+    return BookingDetailComponent;
 }());
-exports.BookingComponent = BookingComponent;
-//# sourceMappingURL=booking.component.js.map
+exports.BookingDetailComponent = BookingDetailComponent;
+//# sourceMappingURL=booking-detail.component.js.map

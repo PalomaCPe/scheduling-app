@@ -9,20 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var projetos_component_1 = require('./projetos.component');
-var AppModule = (function () {
-    function AppModule() {
+var mock_1 = require('../shared/mock');
+var BookingService = (function () {
+    function BookingService() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [projetos_component_1.AppComponent],
-            bootstrap: [projetos_component_1.AppComponent]
-        }), 
+    BookingService.prototype.getBookings = function () {
+        return mock_1.BOOKINGS;
+    };
+    BookingService.prototype.getBooking = function (id) {
+        return mock_1.BOOKINGS.find(function (r) { return r.id == id; });
+    };
+    BookingService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], BookingService);
+    return BookingService;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=projetos.module.js.map
+exports.BookingService = BookingService;
+//# sourceMappingURL=booking.service.js.map

@@ -13,14 +13,21 @@ var platform_browser_1 = require('@angular/platform-browser');
 //Rota
 var router_1 = require('@angular/router');
 var booking_component_1 = require('./booking.component');
+var booking_service_1 = require('./booking.service');
+var percentualPipe_1 = require('../shared/percentualPipe');
+var booking_detail_component_1 = require('./booking-detail.component');
 var BookingModule = (function () {
     function BookingModule() {
     }
     BookingModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forChild([{ path: 'alocation', component: booking_component_1.BookingComponent }
+            imports: [platform_browser_1.BrowserModule,
+                router_1.RouterModule.forChild([
+                    { path: 'bookings', component: booking_component_1.BookingComponent },
+                    { path: 'booking/:id', component: booking_detail_component_1.BookingDetailComponent }
                 ])],
-            declarations: [booking_component_1.BookingComponent],
+            declarations: [booking_component_1.BookingComponent, booking_detail_component_1.BookingDetailComponent, percentualPipe_1.PercentualPipe],
+            providers: [booking_service_1.BookingService]
         }), 
         __metadata('design:paramtypes', [])
     ], BookingModule);

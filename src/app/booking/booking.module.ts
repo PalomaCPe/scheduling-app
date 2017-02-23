@@ -2,14 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 //Rota
-import {RouterModule, Router} from '@angular/router'
-
+import { RouterModule, Router } from '@angular/router';
 import { BookingComponent } from './booking.component';
+import { BookingService } from './booking.service';
+import { PercentualPipe } from '../shared/percentualPipe';
+import { BookingDetailComponent } from './booking-detail.component';
 
 @NgModule({
-    imports: [ BrowserModule, RouterModule.forChild([{ path:'alocation', component: BookingComponent}
+    imports: [ BrowserModule, 
+        RouterModule.forChild([
+            { path:'bookings', component: BookingComponent},
+            { path:'booking/:id', component: BookingDetailComponent}
     ])],
-    declarations: [ BookingComponent ],
+    declarations: [ BookingComponent, BookingDetailComponent,  PercentualPipe],
+    providers:[ BookingService ]
     
 })
 

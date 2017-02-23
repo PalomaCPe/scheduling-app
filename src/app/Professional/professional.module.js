@@ -11,18 +11,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var professional_component_1 = require('./professional.component');
-var ProfissionalModule = (function () {
-    function ProfissionalModule() {
+var ProfessionalModule = (function () {
+    function ProfessionalModule() {
     }
-    ProfissionalModule = __decorate([
+    ProfessionalModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
             declarations: [professional_component_1.ProfessionalComponent],
             bootstrap: [professional_component_1.ProfessionalComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], ProfissionalModule);
-    return ProfissionalModule;
+    ], ProfessionalModule);
+    return ProfessionalModule;
 }());
-exports.ProfissionalModule = ProfissionalModule;
+exports.ProfessionalModule = ProfessionalModule;
 //# sourceMappingURL=professional.module.js.map

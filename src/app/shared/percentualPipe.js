@@ -9,19 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.propriedade = ' Teste aki  ';
+var PercentualPipe = (function () {
+    function PercentualPipe() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'ava-app',
-            templateUrl: 'app.html'
-        }), 
+    PercentualPipe.prototype.transform = function (value) {
+        if (isNaN(value)) {
+            return '';
+        }
+        return value.toString() + '%';
+    };
+    PercentualPipe = __decorate([
+        core_1.Pipe({ name: 'percentual' }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], PercentualPipe);
+    return PercentualPipe;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=projetos.component.js.map
+exports.PercentualPipe = PercentualPipe;
+//# sourceMappingURL=percentualPipe.js.map

@@ -9,4 +9,4 @@ import { RoleComponent } from './role.component';
     bootstrap: [ RoleComponent]
 })
 
-export class roleModule { }
+export class RoleModule { }

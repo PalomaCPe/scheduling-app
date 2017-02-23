@@ -1,10 +1,13 @@
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';		
+import { BookingModule } from './booking.module';
+
 export class Booking { 
-    id:number;
+    id: number;
+    projectId: number;
+    professionalId: number;
     startDate: Date;
     endDate: Date;
-    percentual: Number;
-    projectId: 1;
-    professionalId: 1;
-    //project: null,
-    //professional: null,
+    percentual: number;    
+    //professional: Professional;
+    //project: Project;    
 }
