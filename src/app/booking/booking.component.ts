@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Booking } from './booking';
-import { BOOKINGS } from '../shared/mocks';
 import { BookingService } from './booking.service';
 
 @Component({

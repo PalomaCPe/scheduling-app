@@ -58,6 +58,13 @@ export const CUSTOMERS: Customer[] = [
         contact: 'sasá',
         email: 'lucas.ramalho.salata@avanade.com',
         sponsor: null
+    },
+    {
+        id: 4,
+        name: 'Zendron',
+        contact: 'zendrones',
+        email: 'rafael.zendron.lopes@avanade.com',
+        sponsor: null
     }
 ];
 

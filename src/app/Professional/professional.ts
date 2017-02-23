@@ -12,4 +12,6 @@ export class Professional {
     email: string;
     phone: string;
     role: Role
+
+    constructor() { }
 }

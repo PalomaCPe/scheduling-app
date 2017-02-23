@@ -1,6 +1,6 @@
 <div class="page-header">
     <h3>
-        <span class="glyphicon glyphicon-piggy-bank"></span> {{ pageName }}
+        <span class="glyphicon glyphicon-calendar"></span> {{ pageName }}
     </h3>
 </div>
 
@@ -20,7 +20,7 @@
             <tr *ngFor="let booking of bookings">
                 <td>{{ booking.startDate | date: 'dd/MM/yyyy' }}</td>
                 <td>{{ booking.endDate | date: 'dd/MM/yyyy' }}</td>
-                <td>{{ booking.bookingPercentual }}</td>
+                <td>{{ booking.bookingPercentual | percentual }}</td>
                 <td>{{ booking.professional }}</td>
                 <td>{{ booking.project }}</td>
             </tr>
