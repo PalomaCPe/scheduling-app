@@ -5,4 +5,6 @@ export class Role
     brc: string;
     description:string;
     level:number;
+
+    constructor() { }
 }
