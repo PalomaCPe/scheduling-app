@@ -1,0 +1,25 @@
+<div class="page-content">
+    <div>
+
+    </div>
+    <table class="table table-border-table-striped table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Contato</th>
+                <th>E-mail</th>
+                <th>Sponsor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers">
+                <td>{{ customer.id }}</td>
+                <td>{{ customer.name }}</td>
+                <td>{{ customer.contact }}</td>
+                <td>{{ customer.email }}</td>
+                <td>{{ customer.sponsor }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

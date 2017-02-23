@@ -1,4 +1,7 @@
 import { Booking } from '../booking/booking';
+
+import { Customer } from '../customer/customer';
+
 import { Project } from '../Project/project';
 import { Role } from '../role/Role';
 
@@ -36,6 +39,30 @@ export const BOOKINGS: Booking[] = [
     }
 ];
 
+export const CUSTOMERS: Customer[] = [
+    {
+        id: 1,
+        name: 'Talarico',
+        contact: 'talala',
+        email: 'r.talarico.gomes@avanade.com',
+        sponsor: null
+    },
+    {
+        id: 2,
+        name: 'Geraldo',
+        contact: 'gege',
+        email: 'geraldo.f.neto@accenture.com',
+        sponsor: null
+    },
+    {
+        id: 3,
+        name: 'Salata',
+        contact: 'sasá',
+        email: 'lucas.ramalho.salata@avanade.com',
+        sponsor: null
+    }
+];
+
 export const PROJECT: Project[] = [
     {
 
@@ -48,7 +75,6 @@ export const PROJECT: Project[] = [
         sponsor: null   
     }
 ];
-
 
 export const ROLES: Role[]=[
     {

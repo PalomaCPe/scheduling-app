@@ -13,6 +13,8 @@ var booking_service_1 = require('./booking.service');
 var BookingComponent = (function () {
     function BookingComponent(_bookingService) {
         this._bookingService = _bookingService;
+        this.project = "";
+        this.propriedade = "";
         this.pageName = "Alocações";
         this.bookings = this._bookingService.getBookings();
     }

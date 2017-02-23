@@ -13,6 +13,9 @@ export class BookingComponent {
         private _bookingService: BookingService
     ) { }
 
+    project: string = "";
+    propriedade: string = "";
+
     pageName: string = "Alocações";
 
     bookings: Booking[] = this._bookingService.getBookings();
