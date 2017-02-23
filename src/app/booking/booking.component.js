@@ -24,9 +24,10 @@ var BookingComponent = (function () {
             selector: 'ava-booking',
             templateUrl: 'booking.html'
         }), 
-        __metadata('design:paramtypes', [booking_service_1.BookingService])
+        __metadata('design:paramtypes', [(typeof (_a = typeof booking_service_1.BookingService !== 'undefined' && booking_service_1.BookingService) === 'function' && _a) || Object])
     ], BookingComponent);
     return BookingComponent;
+    var _a;
 }());
 exports.BookingComponent = BookingComponent;
 //# sourceMappingURL=booking.component.js.map
