@@ -20,7 +20,6 @@ var BookingModule = (function () {
     BookingModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule,
-                // ROTA
                 router_1.RouterModule.forChild([
                     { path: 'bookings', component: booking_component_1.BookingComponent }
                 ])],

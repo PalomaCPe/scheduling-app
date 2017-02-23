@@ -13,5 +13,7 @@ export class CustomerComponent implements OnInit {
 
     customers: Customer[] = this._customerService.getCustomers();
 
+    pageName: string = "Clientes";
+
     ngOnInit() { }
 }
