@@ -1,3 +1,28 @@
+<div class="page-header">
+    <h3>
+        <span class="glyphicon glyphicon-calendar"></span> {{ pageName }}
+    </h3>
+</div>
 
-            <h1>Project</h1>
-         
+<div class="page-content">
+    <table class="table table-borded table-striped table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>BRC</th>
+                <th>Descrição</th>
+                <th>Level</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let role of roles">
+                <td>{{ role.id }}</td>
+                <td>{{ role.name }}</td>
+                <td>{{ role.brc }}</td>
+                <td>{{ role.description }}</td>
+                <td>{{ role.level }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
