@@ -15,6 +15,7 @@ var BookingComponent = (function () {
         this._bookingService = _bookingService;
         this.project = "";
         this.propriedade = "";
+        this.pageName = "Alocações";
         this.bookings = this._bookingService.getBookings();
     }
     BookingComponent = __decorate([

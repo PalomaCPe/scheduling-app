@@ -8,10 +8,10 @@ platformBrowserDynamic().bootstrapModule(ProjectModule);
 export class Project
 {
     projectId: number;
-    name: string = "Name";
-    StartDate: string = "Start Date";
-    EndDate: string = "End Date";
-    wbs: string = "wbs";
-    customer: string = "customer";
-    sponsor: string = "Sponsor"
+    name: string;
+    StartDate: Date;
+    EndDate: Date;
+    wbs: string;
+    customer: Customer;
+    sponsor: string;
 }
