@@ -14,4 +14,6 @@ export class Project
     wbs: string;
     customer: Customer;
     sponsor: string;
+
+     constructor() { }
 }
