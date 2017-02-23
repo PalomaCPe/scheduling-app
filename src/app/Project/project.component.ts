@@ -11,6 +11,5 @@ import { PROJECTS } from '../shared/mocks';
 export class ProjectComponent
 {
     propriedade: string = "Project";
-    project: Project[];
-    PROJECTS = Project;
+    projects: Project[] = PROJECTS;
 }
