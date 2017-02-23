@@ -6,15 +6,18 @@ import { RouterModule, Router } from '@angular/router';
 import { AppComponent } from './app.component';
 
 import { BookingModule } from './booking/booking.module';
+import { CustomerModule } from './customer/customer.module';
 import { ProfessionalModule } from './professional/professional.module';
 import { ProjectModule } from './project/project.module';
+import { RoleModule } from './role/role.module';
+
 
 
 
 @NgModule({
-    imports: [ BrowserModule,  RouterModule.forRoot([{ path: "", redirectTo: "/", pathMatch: "full" }]), ProfessionalModule, ProjectModule, BookingModule ],
-    declarations: [ AppComponent], 
-    bootstrap: [ AppComponent]
+    imports: [BrowserModule, RouterModule.forRoot([{ path: "", redirectTo: "/", pathMatch: "full" }]), BookingModule, CustomerModule, ProfessionalModule, ProjectModule, RoleModule],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent]
 })
 
 export class AppModule { }

@@ -18,7 +18,7 @@ var RoleModule = (function () {
     }
     RoleModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forChild([{ path: 'roles', component: role_component_1.RoleComponent }]) /*ROTA*/],
+            imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forChild([{ path: 'roles', component: role_component_1.RoleComponent }])],
             declarations: [role_component_1.RoleComponent],
             bootstrap: [role_component_1.RoleComponent]
         }), 

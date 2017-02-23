@@ -20,7 +20,7 @@ var CustomerModule = (function () {
             imports: [platform_browser_1.BrowserModule,
                 // ROTA
                 router_1.RouterModule.forChild([
-                    { path: 'customer', component: customer_component_1.CustomerComponent }
+                    { path: 'customers', component: customer_component_1.CustomerComponent }
                 ])],
             declarations: [customer_component_1.CustomerComponent]
         }), 
