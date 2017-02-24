@@ -9,7 +9,7 @@
 
         <div class="form-group col-md-6">
             <label for="projectId">Projeto</label>
-            <select class="form-control" [(ngModel)]="booking.projectId" name="projectId" required>
+            <select class="form-control" [(ngModel)]="booking.projectId" name="projectId" required disabled>
                <option 
                [value] = "booking.projectId"
                *ngFor='let project of projects' [selected]='project.projectId'> {{ project.name }}</option>
