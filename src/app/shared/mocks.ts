@@ -81,7 +81,17 @@ export const PROJECTS: Project[] = [
 
     {
         projectId: 2,
-        name: 'teste',
+        name: 'teste2',
+        StartDate: new Date(),
+        EndDate: new Date(),
+        wbs:  '123434345',
+        customer: null,
+        sponsor: null   
+    },
+
+        {
+        projectId: 3,
+        name: 'teste3',
         StartDate: new Date(),
         EndDate: new Date(),
         wbs:  '123434345',
