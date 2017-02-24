@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var CostumerComponent = (function () {
     function CostumerComponent() {
+        this.propriedade = 'Costumer';
     }
     CostumerComponent = __decorate([
         core_1.Component({

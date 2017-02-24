@@ -7,15 +7,14 @@ import { ProjectComponent } from './project.component';
 import { ProjectService } from './project.service'
 
 @NgModule({
-    imports: [ BrowserModule, RouterModule
-    .forChild([
+    imports: [BrowserModule, 
+    RouterModule.forChild([
         { path: 'project', component: ProjectComponent}
-    ]) ],
-    declarations: [ ProjectComponent ],
-    bootstrap: [ ProjectComponent],
+    ])],
+    declarations: [ ProjectComponent ] ,
     providers: [ProjectService],
 })
 
 export class ProjectModule{
-
+    propriedade: string = 'Project';
 }

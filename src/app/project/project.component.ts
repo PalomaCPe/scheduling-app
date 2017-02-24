@@ -1,4 +1,8 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
+
+import { Project } from './project';
+
+import { ProjectService } from './project.service';
 
 @Component({
 	moduleId: module.id,
@@ -7,12 +11,5 @@ import { Component } from '@angular/core'
 })
 
 export class ProjectComponent{
-	id : string = '123';
-	name : string = '321';
-	start_date : string = 'p.josephclimber@prservicos.com.br';
-	end_date : string = 'joseph climber';
-	wbs: string = 'josephclimber@mail.com';
-	customer: string ='2345678';
-	sponsor: string ='2345678';
-
-}
+	propriedade: string = 'projetos';
+ }

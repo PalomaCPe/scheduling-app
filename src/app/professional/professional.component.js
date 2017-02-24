@@ -9,25 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Professional = (function () {
-    function Professional() {
-        this.id = '123';
-        this.pid = '321';
-        this.eid = 'p.josephclimber@prservicos.com.br';
-        this.name = 'joseph climber';
-        this.email = 'josephclimber@mail.com';
-        this.phone = '2345678';
-        this.role = '2345678';
+var ProfessionalComponent = (function () {
+    function ProfessionalComponent() {
+        this.properties = 'Professional';
     }
-    Professional = __decorate([
+    ProfessionalComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'prof',
-            templateUrl: 'professionals.html'
+            templateUrl: 'professional.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], Professional);
-    return Professional;
+    ], ProfessionalComponent);
+    return ProfessionalComponent;
 }());
-exports.Professional = Professional;
+exports.ProfessionalComponent = ProfessionalComponent;
 //# sourceMappingURL=professional.component.js.map

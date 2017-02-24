@@ -9,4 +9,8 @@ export class ProjectService{
     getCostumer(): Project[]{
         return PROJECTS;
     }
+
+     getProject(id: number): Project{
+        return PROJECTS.find(r => r.id == id);
+    }
 }

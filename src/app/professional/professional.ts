@@ -1,5 +1,5 @@
 export class Professional{
-    id : string ;
+    id : number ;
 	pid : string ;
 	eid : string ;
 	name : string ;

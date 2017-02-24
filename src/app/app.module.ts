@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { BookingModule } from './booking/booking.module';
 import { CostumerModule }    from './costumer/costumer.module';
 import { ProjectModule } from './project/project.module';
+import { ProfessionalModule } from './professional/professional.module';
 
 @NgModule({                                     //ROTA
-    imports: [BrowserModule, BookingModule, CostumerModule, RouterModule
+    imports: [BrowserModule, BookingModule, ProjectModule, ProfessionalModule, CostumerModule, RouterModule
         .forRoot([{ path: '', redirectTo: '/', pathMatch: 'full' }])],
     declarations: [AppComponent],
     bootstrap: [AppComponent]

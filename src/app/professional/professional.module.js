@@ -10,19 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var router_1 = require('@angular/router');
 var professional_component_1 = require('./professional.component');
-var ProfessionalsModule = (function () {
-    function ProfessionalsModule() {
+var ProfessionalModule = (function () {
+    function ProfessionalModule() {
     }
-    ProfessionalsModule = __decorate([
+    ProfessionalModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [professional_component_1.Professional],
-            bootstrap: [professional_component_1.Professional]
+            imports: [platform_browser_1.BrowserModule, router_1.RouterModule
+                    .forChild([{ path: 'professional', component: professional_component_1.ProfessionalComponent }])],
+            declarations: [professional_component_1.ProfessionalComponent],
         }), 
         __metadata('design:paramtypes', [])
-    ], ProfessionalsModule);
-    return ProfessionalsModule;
+    ], ProfessionalModule);
+    return ProfessionalModule;
 }());
-exports.ProfessionalsModule = ProfessionalsModule;
+exports.ProfessionalModule = ProfessionalModule;
 //# sourceMappingURL=professional.module.js.map

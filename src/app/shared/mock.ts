@@ -1,6 +1,7 @@
 import { Booking } from '../booking/booking';
 import { Costumer } from '../costumer/costumer';
 import { Project } from '../project/project';
+import { Professional } from '../professional/professional';
 
 
 export const BOOKINGS: Booking[] =[
@@ -55,8 +56,8 @@ export const COSTUMERS: Costumer[]=[
 
 export const PROJECTS: Project[]=[
     {
-        id :  '123',
-    	name :  '321',
+        id :  1,
+    	name :  'acelerador de partículas',
         start_date :  'p.josephclimber@prservicos.com.br',
     	end_date :  'joseph climber',
     	wbs:  'josephclimber@mail.com',
@@ -64,8 +65,8 @@ export const PROJECTS: Project[]=[
     	sponsor: '2345678'
     },
     {
-        id :  '13',
-    	name :  '31',
+        id :  13,
+    	name :  'IBPJ',
         start_date :  'p.josephclimber@prservicos.com.br',
     	end_date :  'joseph climber',
     	wbs:  'josephclimber@mail.com',
@@ -73,4 +74,25 @@ export const PROJECTS: Project[]=[
     	sponsor: '2345678'
     },
 
+]
+
+export const PROFESSIONAL: Professional[]=[
+    {
+        id: '1' ,
+        pid: 'rio' ,
+    	eid: '321' ,
+    	name: 'john doe' ,
+    	email: 'johndoe@mail.com' ,
+    	phone: '2345678' ,
+    	role: 'worker' 
+    },
+    {
+        id : '2' ,
+        pid : 'rio2' ,
+    	eid : '3212' ,
+    	name : 'john doe2' ,
+    	email: 'johndoe@mail.com2' ,
+    	phone: '23456782' ,
+    	role: 'worker2'    
+    }
 ]

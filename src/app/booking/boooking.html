@@ -1,7 +1,7 @@
 <div class="page-header">
     <h3><span class="glyphicon glyphicon-calendar"></span>{{propriedade}}</h3>
 </div>
-
+<br><br>
 <div class="page-content">
     <table class="table table-bordered table-striped table-hover table-responsive">
        <thead>
@@ -11,6 +11,7 @@
                 <th>Percentual</th>
                 <th>Projeto</th>
                 <th>Profissional</th>
+                <th>Detalhe</th>
             </tr>
         </thead>
         <tbody>
@@ -20,6 +21,7 @@
                 <td>{{booking.percentual | percentual }}</td>
                 <td>{{booking.projectId }}</td>
                 <td>{{booking.professionalId }}</td>
+                <td><span [routerLink]="['/booking', booking.id]">detalhe</span></td>
             </tr>
         </tbody>
     </table>
