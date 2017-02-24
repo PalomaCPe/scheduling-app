@@ -1,0 +1,38 @@
+<div class="page-header">
+    <h3>
+        <span class="glyphicon glyphicon-piggy-bank"></span> {{ pageName }}
+    </h3>
+</div>
+
+
+<div class="page-content">
+    <form name="" *ngIf="project">
+        <div class="form-group col-md-6">
+            <label for="id">ID: </label> {{ project.projectId }}
+        </div>
+        <div class="form-group col-md-6">
+            <label for="name">Nome: </label>
+            <input type="text" name="projectName" id="projectName" value="{{ project.name }}" />
+        </div>
+        <div class="form-group col-md-6">
+            <label for="startDate">Data Início: </label>
+            <input type="text" name="projectStartDate" id="projectStartDate" value="{{ project.StartDate | date:'dd/MM/yyyy' }}" />
+        </div>
+        <div class="form-group col-md-6">
+            <label for="endDate">Data Fim: </label>
+            <input type="text" name="projectEndDate" id="projectEndDate" value="{{ project.EndDate | date:'dd/MM/yyyy' }}" />
+        </div>
+        <div class="form-group col-md-6">
+            <label for="wbs">WBS: </label>
+            <input type="text" name="projectWBS" id="projectWBS" value="{{ project.wbs }}" />
+        </div>
+        <div class="form-group col-md-6">
+            <label for="customer">Cliente: </label>
+            <input type="text" name="projectCustomer" id="projectCustomer" value="{{ project.customer.name }}" />
+        </div>
+        <div class="form-group col-md-6">
+            <label for="sponsor">Sponsor: </label>
+            <input type="text" name="projectSponsor" id="projectSponsor" value="{{ project.sponsor.name }}" />
+        </div>
+    </form>
+</div>

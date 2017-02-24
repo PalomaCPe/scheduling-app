@@ -1,4 +1,5 @@
 import { Customer } from './customer';
+import { Professional } from './professional';
 
 export class Project
 {
@@ -8,5 +9,5 @@ export class Project
     EndDate: Date;
     wbs: string;
     customer: Customer;
-    sponsor: string;
+    sponsor: Professional;
 }

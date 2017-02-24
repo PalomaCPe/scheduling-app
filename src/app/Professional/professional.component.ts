@@ -11,7 +11,7 @@ import { ProfessionalService } from './professional.service';
 export class ProfessionalComponent implements OnInit {
     constructor(private _professionalService: ProfessionalService) { }
 
-    professionals: Professional[] = this._professionalService.getProfessional();
+    professionals: Professional[] = this._professionalService.getProfessionals();
     pageName: string = "Professional";
 
     ngOnInit() { }

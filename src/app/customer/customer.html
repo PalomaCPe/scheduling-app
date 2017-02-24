@@ -15,6 +15,7 @@
                 <th>Contato</th>
                 <th>E-mail</th>
                 <th>Sponsor</th>
+                <th>Detalhe</th>
             </tr>
         </thead>
         <tbody>
@@ -24,6 +25,7 @@
                 <td>{{ customer.contact }}</td>
                 <td>{{ customer.email }}</td>
                 <td>{{ customer.sponsor }}</td>
+                <td><span [routerLink]="['/customers', customer.id]">Detalhe</span></td>
             </tr>
         </tbody>
     </table>

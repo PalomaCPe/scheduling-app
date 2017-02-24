@@ -12,7 +12,7 @@ import { ProjectService } from './project.service';
 export class ProjectComponent implements OnInit {
   constructor(private _projectService: ProjectService) { }
 
-    projects: Project[] = this._projectService.getProject();
+    projects: Project[] = this._projectService.getProjects();
     pageName: string = "Projeto";
 
     ngOnInit() { }
