@@ -2,6 +2,7 @@ import { Booking } from '../booking/booking';
 import { Customer } from '../customer/customer';
 import { Project } from '../Project/project';
 import { Role } from '../role/Role';
+import { Professional } from '../Professional/professional';
 
 
 export const BOOKINGS: Booking[] = [
@@ -87,6 +88,37 @@ export const PROJECTS: Project[] = [
         wbs:  '123434345',
         customer: null,
         sponsor: null   
+    }
+];
+
+
+export const PROFESSIONAL: Professional[]=[
+    {
+        id: 1,
+        pid: 1234567,
+        eid: 'r.talarico.gomes',
+        name: 'ASE - Associated Software Engineer',
+        email: 'teste@avanade.com.br',
+        phone: '967445333',
+        role: null
+    },
+    { 
+        id: 2,
+        pid: 1234567,
+        eid: 'lucas.ramalho.salata',
+        name: 'ASE - Associated Software Engineer',
+        email: 'teste@avanade.com.br',
+        phone: '967445333',
+        role: null
+    },
+         { 
+        id: 3,
+        pid: 1234567,
+        eid: 'd.masson.soares',
+        name: 'ASE - Associated Software Engineer',
+        email: 'teste@avanade.com.br',
+        phone: '967445333',
+        role: null
     }
 ];
 
