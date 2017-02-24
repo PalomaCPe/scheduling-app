@@ -11,11 +11,16 @@ import {RoleModule } from './role/role.module';
 
 import { AppComponent } from './app.component';
 
+import { HttpModule } from '@angular/http';
+
+import 'rxjs/add/operator/toPromise';
+
 @NgModule({
-    imports: [ BrowserModule, BookingModule, CustomerModule, ProfessionalModule, ProjectModule, RoleModule, 
+    imports: [ BrowserModule, BookingModule, CustomerModule, ProfessionalModule, ProjectModule, RoleModule, HttpModule,
     RouterModule.forRoot([{ path: '', redirectTo: "/", pathMatch:'full'}])],
     declarations: [ AppComponent ],
-    bootstrap: [ AppComponent]
+    bootstrap: [ AppComponent],
+
 })
 
 export class AppModule { }
