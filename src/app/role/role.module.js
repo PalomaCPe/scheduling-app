@@ -11,18 +11,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var role_component_1 = require('./role.component');
-var ProfessionalsModule = (function () {
-    function ProfessionalsModule() {
+var RoleModule = (function () {
+    function RoleModule() {
     }
-    ProfessionalsModule = __decorate([
+    RoleModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
-            declarations: [role_component_1.Role],
-            bootstrap: [role_component_1.Role]
+            declarations: [role_component_1.RoleComponent],
+            bootstrap: [role_component_1.RoleComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], ProfessionalsModule);
-    return ProfessionalsModule;
+    ], RoleModule);
+    return RoleModule;
 }());
-exports.ProfessionalsModule = ProfessionalsModule;
+exports.RoleModule = RoleModule;
 //# sourceMappingURL=role.module.js.map

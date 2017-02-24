@@ -1,7 +1,7 @@
 import { Project } from '../project/project';
 import { Professional } from '../professional/professional';
 
-export class Booking{
+export class Booking {
     id: number;
     startDate: Date;
     endDate: Date;

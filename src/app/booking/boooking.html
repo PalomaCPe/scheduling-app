@@ -11,15 +11,17 @@
                 <th>Percentual</th>
                 <th>Projeto</th>
                 <th>Profissional</th>
+                <th>Detalhe</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let booking of bookings">
                 <td>{{booking.startDate | date:'dd/MM/yyyy' }}</td>
                 <td>{{booking.endDate | date:'dd/MM/yyyy' }}</td>
-                <td>{{booking.percentual }}</td>
+                <td>{{booking.percentual | percentual }}</td>
                 <td>{{booking.projectId }}</td>
                 <td>{{booking.professionalId }}</td>
+                <td><span [routerLink]="['/booking', booking.id]">Detalhe</span></td>
             </tr>
         </tbody>
     </table>

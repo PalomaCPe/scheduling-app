@@ -4,7 +4,6 @@ import { Booking } from './booking';
 
 import { BookingService } from './bookings.services';
 
-
 	@Component({
 	moduleId: module.id,
 	selector: 'booking' ,

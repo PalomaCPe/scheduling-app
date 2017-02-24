@@ -9,23 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Role = (function () {
-    function Role() {
-        this.id = 'role';
-        this.name = '';
-        this.brc = '';
-        this.description = '';
-        this.level = '';
+var role_services_1 = require('./role.services');
+var RoleComponent = (function () {
+    function RoleComponent(_roleService) {
+        this._roleService = _roleService;
+        this.pageName = 'Roles';
+        this.roleings = this._roleService.getRoles();
     }
-    Role = __decorate([
+    RoleComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'role',
             templateUrl: 'role.html'
         }), 
-        __metadata('design:paramtypes', [])
-    ], Role);
-    return Role;
+        __metadata('design:paramtypes', [role_services_1.RoleService])
+    ], RoleComponent);
+    return RoleComponent;
 }());
-exports.Role = Role;
+exports.RoleComponent = RoleComponent;
 //# sourceMappingURL=role.component.js.map

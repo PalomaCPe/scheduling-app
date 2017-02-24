@@ -1,4 +1,5 @@
 import { Booking } from '../booking/booking';
+import { Role } from '../role/role';
 
 export const BOOKINGS: Booking[] = [
     {
@@ -12,7 +13,7 @@ export const BOOKINGS: Booking[] = [
         professional: null,
     },
     {
-        id: 1,
+        id: 2,
         startDate: new Date("2017-01-01"),
         endDate: new Date("2017-01-01"),
         percentual: 20,
@@ -22,7 +23,7 @@ export const BOOKINGS: Booking[] = [
         professional: null,
     },
     {
-        id: 1,
+        id: 3,
         startDate: new Date("2017-01-01"),
         endDate: new Date("2017-01-01"),
         percentual: 50,
@@ -30,5 +31,22 @@ export const BOOKINGS: Booking[] = [
         professionalId: 3,
         project: null,
         professional: null,
+    }
+]
+
+export const ROLES: Role[] = [
+    {
+        id: 1,
+        name: 'DEVOPS',
+        brc : 'teste',
+        description : 'Role Teste',
+        level: 1,
+    },
+    {
+        id: 2,
+        name: 'DEVOPS',
+        brc : 'teste',
+        description : 'Role Teste2',
+        level: 10,
     }
 ]

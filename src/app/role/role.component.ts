@@ -1,15 +1,22 @@
 import { Component } from '@angular/core';
 
+import { Role } from './role';
+
+import { RoleService } from './role.services';
+
 @Component({
     moduleId: module.id,
     selector: 'role' ,
     templateUrl: 'role.html'
 })
 
-export class Role { 
-    id: string = 'role';
-    name: string = '';
-    brc: string = '';
-    description: string ='';
-    level: string= '';
+export class RoleComponent { 
+   
+    constructor (
+        private _roleService: RoleService
+    ) {}
+
+     pageName: string = 'Roles';
+     roleings: Role[] = this._roleService.getRoles();
+     
 }
