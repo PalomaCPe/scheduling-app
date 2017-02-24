@@ -9,4 +9,7 @@ export class CustomerService {
     getCustomers(): Customer[] {
         return CUSTOMERS;
     }
+    getCustomer(id: number): Customer {
+        return CUSTOMERS.find(r => r.id == id);
+    }
 }

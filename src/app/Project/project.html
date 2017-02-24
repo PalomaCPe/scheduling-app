@@ -17,12 +17,12 @@
         </thead>
         <tbody>
             <tr *ngFor="let project of projects">
-                <th>{{ project.name }}</th>
-                <th>{{ project.StartDate | date:'dd/MM/yyyy' }}</th>
-                <th>{{ project.EndDate | date:'dd/MM/yyyy' }}</th>
-                <th>{{ project.wbs }}</th>
-                <th>{{ project.customer }}</th>
-                <th>{{ project.sponsor }}</th>
+                <td>{{ project.name }}</td>
+                <td>{{ project.StartDate | date:'dd/MM/yyyy' }}</td>
+                <td>{{ project.EndDate | date:'dd/MM/yyyy' }}</td>
+                <td>{{ project.wbs }}</td>
+                <td>{{ project.customer }}</td>
+                <td>{{ project.sponsor }}</td>
             </tr>
         </tbody>
     </table>
