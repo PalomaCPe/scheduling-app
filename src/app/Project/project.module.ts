@@ -13,7 +13,7 @@ import { ProjectService } from './project.service';
                                                     { path: 'projects', component: ProjectComponent},
                                                     { path: 'projects/:id', component: ProjectDetailComponent}])],
     exports: [],
-    declarations: [ProjectComponent],
+    declarations: [ProjectComponent, ProjectDetailComponent],
     providers: [ProjectService],
 })
 

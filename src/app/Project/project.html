@@ -13,6 +13,7 @@
                 <th>WBS</th>
                 <th>Cliente</th>
                 <th>Sponsor</th>
+                <th>Detalhes</th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +24,7 @@
                 <td>{{ project.wbs }}</td>
                 <td>{{ project.customer }}</td>
                 <td>{{ project.sponsor }}</td>
+                <td><span [routerLink]="['/projects', project.projectId]">Detalhe</span></td>
             </tr>
         </tbody>
     </table>

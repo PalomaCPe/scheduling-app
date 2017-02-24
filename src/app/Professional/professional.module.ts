@@ -12,7 +12,7 @@ import { ProfessionalService } from './professional.service';
                                                     { path: 'professionals', component: ProfessionalComponent },
                                                     { path: 'professionals/:id', component: ProfessionalDetailComponent }])],
     exports: [],
-    declarations: [ ProfessionalComponent ],
+    declarations: [ ProfessionalComponent, ProfessionalDetailComponent ],
     bootstrap: [ ProfessionalComponent],
     providers: [ProfessionalService]
      

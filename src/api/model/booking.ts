@@ -1,4 +1,6 @@
- 		
+import { Professional } from './professional';
+import { Project } from './project';
+
 export class Booking
 {
     id: number;
@@ -7,6 +9,6 @@ export class Booking
     startDate: Date;
     endDate: Date;
     bookingPercentual: number;    
-    professional: any;
-    project: any;    
+    professional: Professional;
+    project: Project;    
 }
