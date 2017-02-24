@@ -8,23 +8,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var customer_service_1 = require('./customer.service');
+var core_1 = require("@angular/core");
+var customer_service_1 = require("./customer.service");
 var CustomerComponent = (function () {
     function CustomerComponent(_customeService) {
         this._customeService = _customeService;
         this.propriedadeC = "Tela de Cliente";
         this.customers = this._customeService.getCustomer();
     }
-    CustomerComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'customer-app',
-            templateUrl: 'customer.html'
-        }), 
-        __metadata('design:paramtypes', [customer_service_1.CustomerService])
-    ], CustomerComponent);
     return CustomerComponent;
 }());
+CustomerComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'customer-app',
+        templateUrl: 'customer.html'
+    }),
+    __metadata("design:paramtypes", [customer_service_1.CustomerService])
+], CustomerComponent);
 exports.CustomerComponent = CustomerComponent;
 //# sourceMappingURL=customer.component.js.map

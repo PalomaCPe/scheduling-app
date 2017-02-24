@@ -8,23 +8,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var project_service_1 = require('./project.service');
+var core_1 = require("@angular/core");
+var project_service_1 = require("./project.service");
 var ProjectComponent = (function () {
     function ProjectComponent(_projectService) {
         this._projectService = _projectService;
         this.projectLabel = "Tela de Projetos";
         this.projects = this._projectService.getProject();
     }
-    ProjectComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'project-app',
-            templateUrl: 'project.html'
-        }), 
-        __metadata('design:paramtypes', [project_service_1.ProjectService])
-    ], ProjectComponent);
     return ProjectComponent;
 }());
+ProjectComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'project-app',
+        templateUrl: 'project.html'
+    }),
+    __metadata("design:paramtypes", [project_service_1.ProjectService])
+], ProjectComponent);
 exports.ProjectComponent = ProjectComponent;
 //# sourceMappingURL=project.component.js.map
