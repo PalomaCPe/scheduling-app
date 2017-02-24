@@ -1,7 +1,6 @@
 "use strict";
 var Professional = (function () {
     function Professional() {
-        this.propriedade = "Professional Hello world";
     }
     return Professional;
 }());

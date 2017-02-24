@@ -9,9 +9,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var professional_service_1 = require('./professional.service');
 var ProfessionalComponent = (function () {
-    function ProfessionalComponent() {
-        this.professionalLabel = "Professional ";
+    function ProfessionalComponent(_professionalService) {
+        this._professionalService = _professionalService;
+        this.professionalLabel = "Tela de Profissionais";
+        this.professionals = this._professionalService.getProfessional();
     }
     ProfessionalComponent = __decorate([
         core_1.Component({
@@ -19,7 +22,7 @@ var ProfessionalComponent = (function () {
             selector: 'professional-app',
             templateUrl: 'professional.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [professional_service_1.ProfessionalService])
     ], ProfessionalComponent);
     return ProfessionalComponent;
 }());

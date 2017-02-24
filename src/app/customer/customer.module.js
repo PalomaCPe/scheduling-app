@@ -10,8 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
-var customer_component_1 = require('./customer.component');
 var router_1 = require('@angular/router');
+var customer_component_1 = require('./customer.component');
+var customer_service_1 = require('./customer.service');
 var CustomerModule = (function () {
     function CustomerModule() {
     }
@@ -22,7 +23,8 @@ var CustomerModule = (function () {
                 router_1.RouterModule.forChild([
                     { path: 'customers', component: customer_component_1.CustomerComponent }
                 ])],
-            declarations: [customer_component_1.CustomerComponent]
+            declarations: [customer_component_1.CustomerComponent],
+            providers: [customer_service_1.CustomerService]
         }), 
         __metadata('design:paramtypes', [])
     ], CustomerModule);

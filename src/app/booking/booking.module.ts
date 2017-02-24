@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BookingComponent } from './booking.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { BookingComponent } from './booking.component';
+import { BookingDetailComponent } from './booking-detail.component';
 import { BookingService } from './booking.service';
+import { ProjectService } from '../project/project.service';
 import { PercentualPipe } from '../shared/percentualPipe';
 
 @NgModule({
-    imports: [BrowserModule,
+    imports: [BrowserModule, FormsModule,
         // ROTA
         RouterModule.forChild([
-            { path: 'bookings', component: BookingComponent }
+            { path: 'bookings', component: BookingComponent },
+            { path: 'booking/:id', component: BookingDetailComponent }
         ])],
-    declarations: [BookingComponent, PercentualPipe],
-    providers: [BookingService]
+    declarations: [BookingComponent, PercentualPipe, BookingDetailComponent],
+    providers: [BookingService, ProjectService]
 })
 
 export class BookingModule { }

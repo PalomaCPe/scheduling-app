@@ -1,1 +1,26 @@
-<h1>{{ propriedadeC }} </h1>
+<div class="page-header">
+    <h3> <span class="glyphicon glyphicon-calendar"></span> {{ propriedadeC }} </h3>
+</div>
+
+<div class="page-content">
+    <table class="table table-borded table-striped table-hover table-responsive">
+        <thead>
+            <tr>
+                <th> Nome </th>
+                <th> Contato </th>
+                <th> E-mail </th>
+                <th> Project </th>
+                <th> Sponsor </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers">
+                <td> {{ customer.name }} </td>
+                <td> {{ customer.contact }} </td>
+                <td> {{ customer.email }} </td>
+                <td> {{ customer.project }} </td>
+                <td> {{ customer.sponsor }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

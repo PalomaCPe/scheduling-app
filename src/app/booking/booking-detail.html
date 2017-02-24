@@ -1,0 +1,49 @@
+<div class="page-header">
+    <h3> <span class="glyphicon glyphicon-calendar"></span> {{ pageName }} </h3>
+</div>
+
+<div class="page-content">
+    <form name="bookingForm" *ngIf="booking">
+
+        <h4>ID: {{ booking.id }} </h4>
+
+        <div class="form-group col-md-6">
+            <label for="projectId">Projeto</label>
+            <select class="form-control" [(ngModel)]="booking.projectId" name="projectId" required>
+               <option 
+               [value] = "booking.projectId"
+               *ngFor='let project of projects' [selected]='project.projectId'> {{ project.name }}</option>
+        </select>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="professionalId">Profissional</label>
+            <select class="form-control" [(ngModel)]="booking.professionalId" name="professionalId" required>
+               <option [value] = "booking.professionalId"> {{booking.professionalId}}</option>
+        </select>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="startDate">Data Inicio</label>
+            <input #startDateInput id="startDate" value="{{ booking.startDate | date:'yyyy-MM-dd' }}" name="startDate" class="form-control"
+                type="date" (input)="startDateChanged(startDateInput.value)" required>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="endDate">Data Fim</label>
+            <input #endDateInput id="endDate" value="{{ booking.endDate | date:'yyyy-MM-dd' }}" name="endDate" class="form-control" type="date"
+                (input)="endDateChanged(endDateInput.value)" required>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="bookingPercetual">Percentual de Alocação</label>
+            <div class="input-group">
+                <input id="bookingPercetual" value="{{ booking.percentual }}" [(ngModel)]="booking.percentual" name="bookingPercetual" required
+                    class="form-control" min="0" max="100" step="10">
+                    <div class="input-group-addon">%</div>
+            </div>
+        </div>
+
+
+    </form>
+</div>

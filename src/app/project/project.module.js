@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var router_1 = require('@angular/router');
 var project_component_1 = require('./project.component');
+var project_service_1 = require('./project.service');
 var ProjectModule = (function () {
     function ProjectModule() {
     }
@@ -21,7 +22,7 @@ var ProjectModule = (function () {
                     { path: 'projects', component: project_component_1.ProjectComponent }
                 ])],
             declarations: [project_component_1.ProjectComponent],
-            bootstrap: [project_component_1.ProjectComponent]
+            providers: [project_service_1.ProjectService]
         }), 
         __metadata('design:paramtypes', [])
     ], ProjectModule);

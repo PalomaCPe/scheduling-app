@@ -4,7 +4,7 @@ import { ROLES } from '../shared/mock';
 
 @Injectable()
 export class RoleService {
-    getRoles(): Role[]{
+    getRoles(): Role[] {
         return ROLES;
     }
 }
