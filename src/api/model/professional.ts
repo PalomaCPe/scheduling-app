@@ -1,4 +1,4 @@
-import { Role } from '../Role/Role';
+//import { Role } from '../Role/Role';	
 
 export class Professional {
     id: number;
@@ -7,5 +7,5 @@ export class Professional {
     name: string;
     email: string;
     phone: string;
-    role: Role
+    role: any; //Role
 }
