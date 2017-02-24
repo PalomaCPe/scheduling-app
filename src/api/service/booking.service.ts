@@ -1,6 +1,6 @@
 import { Router, Response, Request } from 'express';
-import { Booking } from '../model/booking';
 import { BookingApplication } from '../application/booking.application';
+import { Booking } from '../model/booking';
 
 export const bookingRouter: Router = Router();
 

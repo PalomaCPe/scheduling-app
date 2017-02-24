@@ -1,3 +1,6 @@
+import { Project } from "./project";
+import { Professional } from "./professional";
+
 export class Booking {
     id: number;
     startDate: Date;
@@ -5,4 +8,6 @@ export class Booking {
     percentual: number;
     projectId: number;
     professionalId: number;
+    project: Project;
+    professional: Professional;
 }

@@ -75,12 +75,20 @@ export const PROFESSIONALS: Professional[] = [
 ];
 
 export const PROJECTS: Project[] = [
-{
+    {
         id: 1,
         name: 'Novo IBPJ',
         startDate: new Date('2016-03-01T02:00:00.0002'),
         endDate: new Date('2999-12-31T02:00:00.0002'),
         wbs: 'WAX3452',
         customer: 'Santander'
+    },
+    {
+        id: 2,
+        name: 'Safra - Mobile',
+        startDate: new Date('2017-01-01T02:00:00.0002'),
+        endDate: new Date('2020-08-15T02:00:00.0002'),
+        wbs: 'EOA323',
+        customer: 'Safra'
     }
 ];
