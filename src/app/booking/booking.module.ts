@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 //ROTA
 import { RouterModule, Router } from '@angular/router';
 
+import { ProfessionalComponent } from '../professional/professional.component';
 import { ProjectComponent } from '../project/project.component';
 import { BookingComponent } from './booking.component';
 import { BookingDetailComponent } from './booking-detail.component';
-import {  }
+
 
 import { ProfessionalService } from "../professional/professional.services";
 import { BookingService } from './booking.service';
@@ -21,7 +22,7 @@ import { PercentualPipe} from '../shared/percentualPipe';
         { path: 'booking', component: BookingComponent},
         { path: 'booking/:id', component: BookingDetailComponent}
     ])],
-    declarations: [ BookingComponent, BookingDetailComponent, ProjectComponent , PercentualPipe ],
+    declarations: [ BookingComponent, BookingDetailComponent, ProjectComponent, ProfessionalComponent,  PercentualPipe ],
     providers: [BookingService, ProjectService, ProfessionalService],
 })
 

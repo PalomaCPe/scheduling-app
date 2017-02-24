@@ -78,7 +78,7 @@ export const PROJECTS: Project[]=[
 
 export const PROFESSIONAL: Professional[]=[
     {
-        id: '1' ,
+        id: 1,
         pid: 'rio' ,
     	eid: '321' ,
     	name: 'john doe' ,
@@ -87,7 +87,7 @@ export const PROFESSIONAL: Professional[]=[
     	role: 'worker' 
     },
     {
-        id : '2' ,
+        id : 2 ,
         pid : 'rio2' ,
     	eid : '3212' ,
     	name : 'john doe2' ,
