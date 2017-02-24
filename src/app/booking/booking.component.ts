@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 import { Booking } from './booking';
 import { BookingService } from './booking.service';
-// import { BOOKINGS } from '../shared/mock'; <-- MOCK -->
+
+// import { BOOKINGS } from '../shared/mock'; <-- MOCK  2-->
 
 @Component({
     moduleId: module.id,
@@ -9,12 +11,21 @@ import { BookingService } from './booking.service';
     templateUrl: 'booking.html'
 })
 
-export class BookingComponent {
+export class BookingComponent implements OnInit {
     constructor(
         private _bookingService: BookingService
     ) { }
 
     propriedade: string = 'Página de alocações';
-    bookings: Booking[] = this._bookingService.getBookings();
-    // bookings: Booking[] = BOOKINGS; <-- MOCK -->
+    bookings: Booking[];
+
+    // bookings: Booking[] = this._bookingService.getBookings(); <-- MOCK 1 -->
+    // bookings: Booking[] = BOOKINGS;                           <-- MOCK 2 -->
+
+    ngOnInit() {
+        this._bookingService.getBookings().then((result: Booking[]) => {
+            this.bookings = result;
+        });
+    }
+
 }

@@ -3,7 +3,6 @@ import { ProfessionalPersistence } from '../persistence/professional.persistence
 
 export class ProfessionalApplication {
     constructor(
-
         private professionalPersistence: ProfessionalPersistence = new ProfessionalPersistence()
     ) { }
 

@@ -3,7 +3,6 @@ import { RolePersistence } from '../persistence/role.persistence';
 
 export class RoleApplication {
     constructor(
-
         private rolePersistence: RolePersistence = new RolePersistence()
     ) { }
 

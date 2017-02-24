@@ -3,7 +3,6 @@ import { ProjectPersistence } from '../persistence/project.persistence';
 
 export class ProjectApplication {
     constructor(
-
         private projectPersistence: ProjectPersistence = new ProjectPersistence()
     ) { }
 
