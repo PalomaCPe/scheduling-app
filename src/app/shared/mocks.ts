@@ -72,7 +72,7 @@ export const CUSTOMERS: Customer[] = [
 export const PROJECTS: Project[] = [
     {
         projectId: 1,
-        name: 'teste1',
+        name: 'Projeto 1',
         StartDate: new Date(),
         EndDate: new Date(),
         wbs:  '12343445',
@@ -82,13 +82,22 @@ export const PROJECTS: Project[] = [
 
     {
         projectId: 2,
-        name: 'teste',
+        name: 'Projeto 2',
         StartDate: new Date(),
         EndDate: new Date(),
         wbs:  '123434345',
         customer: null,
         sponsor: null   
-    }
+    },
+
+    {
+        projectId: 3,
+        name: 'Projeto 3',
+        StartDate: new Date(),
+        EndDate: new Date(),
+        wbs:  '123434345',
+        customer: null,
+        sponsor: null   }
 ];
 
 
