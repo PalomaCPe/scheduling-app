@@ -8,4 +8,8 @@ export class RoleService {
     getRoles(): Role[] {
         return ROLES;
     }
+
+    getRole(id: number): Role {
+        return ROLES.find(r => r.id == id);
+    }
 }

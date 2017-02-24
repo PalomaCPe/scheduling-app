@@ -15,6 +15,7 @@
                 <th>E-mail</th>
                 <th>Telefone</th>
                 <th>Role</th>
+                <th>Detalhe</th>
             </tr>
         </thead>
         <tbody>
@@ -26,6 +27,7 @@
                 <td>{{ professional.email }}</td>
                 <td>{{ professional.phone }}</td>
                 <td>{{ professional.role }}</td>
+                <td><span [routerLink]="['/professionals', professional.id]">Detalhe</span></td>
             </tr>
         </tbody>
     </table>

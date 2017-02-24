@@ -13,6 +13,7 @@
                 <th>BRC</th>
                 <th>Descrição</th>
                 <th>Level</th>
+                <th>Detalhes</th>
             </tr>
         </thead>
         <tbody>
@@ -22,6 +23,7 @@
                 <td>{{ role.brc }}</td>
                 <td>{{ role.description }}</td>
                 <td>{{ role.level }}</td>
+                <td><span [routerLink]="['/roles', role.id]">Detalhe</span></td>
             </tr>
         </tbody>
     </table>

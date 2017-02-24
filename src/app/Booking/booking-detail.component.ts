@@ -30,8 +30,8 @@ export class BookingDetailComponent implements OnInit {
         this._route.params.forEach((param: Params) => { this.id = param["id"] });
 
         this.booking = this._bookingService.getBooking(this.id);
-        this.projects = this._projectService.getProject();
-        this.professionals = this._professionalService.getProfessional();
+        this.projects = this._projectService.getProjects();
+        this.professionals = this._professionalService.getProfessionals();
     }
 
     ngOnInit()

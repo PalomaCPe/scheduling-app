@@ -6,7 +6,11 @@ import { PROFESSIONAL } from '../shared/mocks';
 
 @Injectable()
 export class ProfessionalService {
-    getProfessional(): Professional[] {
+    getProfessionals(): Professional[] {
         return PROFESSIONAL;
+    }
+
+    getProfessional(id: number): Professional {
+        return PROFESSIONAL.find(r => r.id == id);
     }
 }

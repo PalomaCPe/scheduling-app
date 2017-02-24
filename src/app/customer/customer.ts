@@ -7,8 +7,4 @@ export class Customer {
     contact: string;
     email: string;
     sponsor: Professional;
-
-    constructor() { }
-
-
 }
