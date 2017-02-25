@@ -8,9 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var booking_service_1 = require('./booking.service');
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var booking_service_1 = require("./booking.service");
 var BookingDetailComponent = (function () {
     function BookingDetailComponent(_route, _bookingService) {
         this._route = _route;
@@ -27,14 +27,15 @@ var BookingDetailComponent = (function () {
         });
         this.booking = this._bookingService.getBooking(this.id);
     };
-    BookingDetailComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            templateUrl: 'booking-detail.html'
-        }), 
-        __metadata('design:paramtypes', [router_1.ActivatedRoute, booking_service_1.BookingService])
-    ], BookingDetailComponent);
     return BookingDetailComponent;
 }());
+BookingDetailComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        templateUrl: 'booking-detail.html'
+    }),
+    __metadata("design:paramtypes", [router_1.ActivatedRoute,
+        booking_service_1.BookingService])
+], BookingDetailComponent);
 exports.BookingDetailComponent = BookingDetailComponent;
 //# sourceMappingURL=booking-detail.component.js.map

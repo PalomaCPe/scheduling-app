@@ -8,22 +8,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var mock_1 = require('../shared/mock');
+var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
+var mock_1 = require("../shared/mock");
+var SERVICE_URL = 'api/booking';
 var BookingService = (function () {
-    function BookingService() {
+    function BookingService(_httpService) {
+        this._httpService = _httpService;
     }
     BookingService.prototype.getBookings = function () {
-        return mock_1.BOOKINGS;
+        var url = SERVICE_URL + "/list";
+        return this._httpService.get(url)
+            .toPromise()
+            .then(function (response) {
+            return response.json();
+        });
     };
     BookingService.prototype.getBooking = function (id) {
         return mock_1.BOOKINGS.find(function (r) { return r.id == id; });
     };
-    BookingService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], BookingService);
     return BookingService;
 }());
+BookingService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], BookingService);
 exports.BookingService = BookingService;
 //# sourceMappingURL=booking.service.js.map

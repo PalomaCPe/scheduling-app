@@ -7,9 +7,10 @@ import { BookingComponent } from './booking.component';
 import { BookingService } from './booking.service';
 import { PercentualPipe } from '../shared/percentualPipe';
 import { BookingDetailComponent } from './booking-detail.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-    imports: [ BrowserModule, 
+    imports: [ BrowserModule, FormsModule,
         RouterModule.forChild([
             { path:'bookings', component: BookingComponent},
             { path:'booking/:id', component: BookingDetailComponent}
