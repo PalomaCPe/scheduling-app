@@ -71,6 +71,15 @@ export const PROFESSIONALS: Professional[] = [
         email: 'd.masson.soares@avanade.com',
         phone: 99999999,
         role: 'SA'
+    },
+    {
+        id: 2,
+        pid: 11337544,
+        eid: 11337544,
+        name: 'Enoque Felipe',
+        email: 'enoque.felipe.d.leal@accenture.com',
+        phone: 344546466,
+        role: 'SE'
     }
 ];
 
