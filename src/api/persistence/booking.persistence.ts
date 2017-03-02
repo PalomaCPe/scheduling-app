@@ -16,4 +16,17 @@ export class BookingPersistence {
                 return bookings;
             });
     }
+
+    read(id: number){
+        let database: Db;
+        return Connection.conn()
+            .then((db: Db) => {
+                database = db;
+                return db.collection('booking').findOne({id: id});
+            })
+            .then((booking: any) => {
+                database.close();
+                return booking as Booking;
+            });
+    }
 };

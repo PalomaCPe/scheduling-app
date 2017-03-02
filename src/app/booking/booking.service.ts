@@ -20,7 +20,13 @@ export class BookingService {
                 return response.json() as Booking[];
             });
     }
-    getBooking(id: number): Booking {
-        return BOOKINGS.find(r => r.id == id);
+    getBooking(id: number): Promise<Booking> {
+        let url: string = `${SERVICE_URL}/${id}`;
+
+        return this._httpService.get(url)
+            .toPromise()
+            .then((response: Response) => {
+                return response.json() as Booking;
+            });
     }
 }
