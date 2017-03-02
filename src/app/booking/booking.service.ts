@@ -21,13 +21,10 @@ export class BookingService {
         });
     }
 
-    /* <-- MOCK -->
-     getBookings(): Booking[] {
-        return BOOKINGS;
-    }
-    */
-
-    getBooking(id: number): Booking {
-        return BOOKINGS.find(b => b.id == id);
+    getBooking(id: number): Promise<Booking> {
+        let url: string = `${SERVICE_URL}/${id}`;
+        return this._httpService.get(url).toPromise().then((response: Response) => {
+            return response.json() as Booking;
+        })
     }
 }

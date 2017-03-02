@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { Booking } from './booking';
-import { Project} from '../project/project';
+import { Project } from '../project/project';
 import { BookingService } from './booking.service';
 import { ProjectService } from '../project/project.service';
 
@@ -33,7 +33,9 @@ export class BookingDetailComponent implements OnInit {
             this.id = param["id"];
         });
 
-        this.booking = this._bookingService.getBooking(this.id);
+        this._bookingService.getBooking(this.id).then((result: Booking) => {
+            this.booking = result;
+        });
     }
 
 }

@@ -9,4 +9,8 @@ export class BookingApplication {
     getBookings(): Promise<Booking[]> {
         return this.bookingPersistence.list();
     }
+
+    getBooking(id: number): Promise<Booking> {
+        return this.bookingPersistence.read(id);
+    }
 }
