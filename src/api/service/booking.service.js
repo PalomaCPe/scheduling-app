@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = require("express");
 var booking_application_1 = require("../application/booking.application");
 exports.bookingRouter = express_1.Router();

@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var connection_1 = require("./connection");
 var BookingPersistence = (function () {
     function BookingPersistence() {

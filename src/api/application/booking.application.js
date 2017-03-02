@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var booking_persistence_1 = require("../persistence/booking.persistence");
 var BookingApplication = (function () {
     function BookingApplication(bookingPersistence) {
