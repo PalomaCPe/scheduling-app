@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-var mock_1 = require("../shared/mock");
 var SERVICE_URL = 'api/booking';
 var BookingService = (function () {
     function BookingService(_httpService) {
@@ -26,7 +25,12 @@ var BookingService = (function () {
         });
     };
     BookingService.prototype.getBooking = function (id) {
-        return mock_1.BOOKINGS.find(function (r) { return r.id == id; });
+        var url = SERVICE_URL + "/" + id;
+        return this._httpService.get(url)
+            .toPromise()
+            .then(function (response) {
+            return response.json();
+        });
     };
     return BookingService;
 }());

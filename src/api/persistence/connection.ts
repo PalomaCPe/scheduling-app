@@ -1,6 +1,6 @@
 import { MongoClient, Db } from 'mongodb';
 
-const mongoUrl: string = 'mongodb://localhost:27017/database';
+const mongoUrl: string = 'mongodb://localhost:27017/mongodb';
 
 export class Connection{
     static conn(): Promise<Db>{

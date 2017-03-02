@@ -9,6 +9,9 @@ var BookingApplication = (function () {
     BookingApplication.prototype.getBookings = function () {
         return this.bookingPersistence.list();
     };
+    BookingApplication.prototype.getBooking = function (id) {
+        return this.bookingPersistence.read(id);
+    };
     return BookingApplication;
 }());
 exports.BookingApplication = BookingApplication;

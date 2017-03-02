@@ -27,8 +27,11 @@ export class BookingDetailComponent implements OnInit{
         this._route.params.forEach((param: Params) => {
             this.id = param["id"];
         });
-
-        this.booking = this._bookingService.getBooking(this.id);
+        
+        this._bookingService.getBooking(this.id)
+            .then((result: Booking) => {
+                this.booking = result;
+            })
     }
 
 }

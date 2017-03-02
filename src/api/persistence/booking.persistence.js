@@ -16,6 +16,18 @@ var BookingPersistence = (function () {
             return bookings;
         }));
     };
+    BookingPersistence.prototype.read = function (id) {
+        var database;
+        return Promise.resolve(connection_1.Connection.conn()
+            .then(function (db) {
+            database = db;
+            return db.collection('booking').findOne({ id: id });
+        })
+            .then(function (booking) {
+            database.close();
+            return booking;
+        }));
+    };
     return BookingPersistence;
 }());
 exports.BookingPersistence = BookingPersistence;

@@ -26,7 +26,10 @@ var BookingDetailComponent = (function () {
         this._route.params.forEach(function (param) {
             _this.id = param["id"];
         });
-        this.booking = this._bookingService.getBooking(this.id);
+        this._bookingService.getBooking(this.id)
+            .then(function (result) {
+            _this.booking = result;
+        });
     };
     return BookingDetailComponent;
 }());

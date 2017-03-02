@@ -10,4 +10,12 @@ exports.bookingRouter.get('/list', function (request, response) {
         response.json(resultado);
     });
 });
+exports.bookingRouter.get('/:id', function (request, response) {
+    var bookingApplication = new booking_application_1.BookingApplication();
+    var id = +request.params.id;
+    bookingApplication.getBooking(id)
+        .then(function (result) {
+        response.json(result);
+    });
+});
 //# sourceMappingURL=booking.service.js.map
