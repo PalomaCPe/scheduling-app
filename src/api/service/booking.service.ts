@@ -23,3 +23,12 @@ bookingRouter.get('/:id', (request: Request, response: Response) => {
             response.json(result);
         });
 });
+
+bookingRouter.post('/post', (request: Request, response: Response) => {
+    let bookingApplication: BookingApplication = new BookingApplication();
+
+    bookingApplication.createBooking(request.body.booking)
+        .then((result: Booking) => {
+            response.json(result);
+        });
+});

@@ -12,6 +12,9 @@ var BookingApplication = (function () {
     BookingApplication.prototype.getBooking = function (id) {
         return this.bookingPersistence.read(id);
     };
+    BookingApplication.prototype.createBooking = function (booking) {
+        return this.bookingPersistence.create(booking);
+    };
     return BookingApplication;
 }());
 exports.BookingApplication = BookingApplication;

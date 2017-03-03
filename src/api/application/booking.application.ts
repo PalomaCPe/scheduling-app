@@ -13,4 +13,8 @@ export class BookingApplication{
     getBooking(id: number): Promise<Booking>{
         return this.bookingPersistence.read(id);
     }
+
+    createBooking(booking: Booking): Promise<Booking>{
+         return this.bookingPersistence.create(booking);
+    }
 }

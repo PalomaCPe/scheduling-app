@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
     imports: [ BrowserModule, FormsModule,
         RouterModule.forChild([
             { path:'bookings', component: BookingComponent},
-            { path:'booking/:id', component: BookingDetailComponent}
+            { path:'booking/:action/:id', component: BookingDetailComponent}
     ])],
     declarations: [ BookingComponent, BookingDetailComponent,  PercentualPipe],
     providers:[ BookingService ]

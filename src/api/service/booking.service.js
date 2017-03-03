@@ -18,4 +18,11 @@ exports.bookingRouter.get('/:id', function (request, response) {
         response.json(result);
     });
 });
+exports.bookingRouter.post('/post', function (request, response) {
+    var bookingApplication = new booking_application_1.BookingApplication();
+    bookingApplication.createBooking(request.body.booking)
+        .then(function (result) {
+        response.json(result);
+    });
+});
 //# sourceMappingURL=booking.service.js.map

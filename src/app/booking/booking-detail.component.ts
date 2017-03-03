@@ -18,9 +18,17 @@ export class BookingDetailComponent implements OnInit{
     pageName:string = 'Alocação';
     id:number;
     booking: Booking;
+    action: string;
 
     ngOnInit(){
-        this.getBooking();
+        this._route.params.forEach((param: Params) => {
+            this.action = param["action"];
+        });
+        if(this.action == 'detail'){
+            this.getBooking();
+        }else{
+            this.booking = new Booking();
+        }
     }
 
     getBooking(){
@@ -33,5 +41,14 @@ export class BookingDetailComponent implements OnInit{
                 this.booking = result;
             })
     }
+
+    onSave(){
+        this._bookingService.createBooking(this.booking)
+            .then((result: Booking) => {
+                this.booking = result;
+                this.action = 'detail';
+        })
+        .catch(() => { console.log('erro ao salvar')})
+    } 
 
 }

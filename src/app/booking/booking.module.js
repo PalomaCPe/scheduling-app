@@ -25,7 +25,7 @@ BookingModule = __decorate([
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule,
             router_1.RouterModule.forChild([
                 { path: 'bookings', component: booking_component_1.BookingComponent },
-                { path: 'booking/:id', component: booking_detail_component_1.BookingDetailComponent }
+                { path: 'booking/:action/:id', component: booking_detail_component_1.BookingDetailComponent }
             ])],
         declarations: [booking_component_1.BookingComponent, booking_detail_component_1.BookingDetailComponent, percentualPipe_1.PercentualPipe],
         providers: [booking_service_1.BookingService]

@@ -30,7 +30,16 @@ export class BookingService{
             .toPromise()
             .then((response: Response) => {
                 return response.json() as Booking;
-            });
+        });
+    }
 
+    createBooking(booking: Booking){
+        let url: string = `${SERVICE_URL}/post`;
+
+        return this._httpService.post(url, {booking: booking})
+            .toPromise()
+            .then((response: Response) => {
+                return response.json() as Booking;
+            });
     }
 }

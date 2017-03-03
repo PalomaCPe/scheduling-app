@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var booking_service_1 = require("./booking.service");
+var booking_1 = require("./booking");
 var BookingDetailComponent = (function () {
     function BookingDetailComponent(_route, _bookingService) {
         this._route = _route;
@@ -19,7 +20,16 @@ var BookingDetailComponent = (function () {
         this.pageName = 'Alocação';
     }
     BookingDetailComponent.prototype.ngOnInit = function () {
-        this.getBooking();
+        var _this = this;
+        this._route.params.forEach(function (param) {
+            _this.action = param["action"];
+        });
+        if (this.action == 'detail') {
+            this.getBooking();
+        }
+        else {
+            this.booking = new booking_1.Booking();
+        }
     };
     BookingDetailComponent.prototype.getBooking = function () {
         var _this = this;
@@ -27,6 +37,13 @@ var BookingDetailComponent = (function () {
             _this.id = param["id"];
         });
         this._bookingService.getBooking(this.id)
+            .then(function (result) {
+            _this.booking = result;
+        });
+    };
+    BookingDetailComponent.prototype.onSave = function () {
+        var _this = this;
+        this._bookingService.createBooking(this.booking)
             .then(function (result) {
             _this.booking = result;
         });

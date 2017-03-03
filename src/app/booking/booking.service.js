@@ -32,6 +32,14 @@ var BookingService = (function () {
             return response.json();
         });
     };
+    BookingService.prototype.createBooking = function (booking) {
+        var url = SERVICE_URL + "/post";
+        return this._httpService.post(url, { booking: booking })
+            .toPromise()
+            .then(function (response) {
+            return response.json();
+        });
+    };
     return BookingService;
 }());
 BookingService = __decorate([
