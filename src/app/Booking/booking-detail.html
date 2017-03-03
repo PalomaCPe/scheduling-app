@@ -50,4 +50,10 @@
                 <div class="input-group-addon">%</div>
         </div>
     </div>
+
+    <div class="form-group" *ngIf="action == 'new'">
+        <div class="col-md-10">
+            <button type="button" class="btn btn-primary btn-outline" (click)="onSave()">Salvar</button>
+        </div>
+    </div>
 </div>

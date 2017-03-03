@@ -24,7 +24,24 @@ export class BookingDetailComponent implements OnInit {
     id: number;
     booking: Booking;
     projects: Project[]; 
-    professionals: Professional[]; 
+    professionals: Professional[];
+    action: String;
+
+    ngOnInit()
+    {
+        this._route.params.forEach((param: Params) => {
+            this.action = param["action"]
+        });
+
+        if (this.action == "detail"){
+            this.getBooking();
+        }
+        else if (this.action == "new"){
+            this.booking = new Booking();
+            this.projects = this._projectService.getProjects();
+            this.professionals = this._professionalService.getProfessionals();
+        }
+    }
 
     getBooking() {
         this._route.params.forEach((param: Params) => { this.id = param["id"] });
@@ -37,8 +54,20 @@ export class BookingDetailComponent implements OnInit {
         this.professionals = this._professionalService.getProfessionals();
     }
 
-    ngOnInit()
-    {
-        this.getBooking();
+    onSave(){
+        this._bookingService.createBooking(this.booking)
+            .then((result: Booking) => {
+                this.booking = result;
+                this.action = 'detail';
+            })
+            .catch(() => {console.log('Erro ao Salvar')});
+    }
+
+    startDateChanged(value: Date): void {
+        this.booking.startDate = value;
+    }
+
+    endDateChanged(value: Date): void {
+        this.booking.endDate = value;
     }
 }

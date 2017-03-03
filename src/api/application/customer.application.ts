@@ -9,4 +9,8 @@ export class CustomerApplication {
     getCustomers(): Promise<Customer[]>{
         return this.customerPersistence.list();
     }
+
+    getCustomer(id: number){
+        return this.customerPersistence.read(id);
+    }
 }

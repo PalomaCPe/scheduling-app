@@ -24,8 +24,14 @@
                 <td>{{ booking.bookingPercentual | percentual }}</td>
                 <td>{{ booking.professional }}</td>
                 <td>{{ booking.project }}</td>
-                <td><span [routerLink]="['/bookings', booking.id]">Detalhe</span></td>
+                <td><span [routerLink]="['/bookings', 'detail', booking.id]">Detalhe</span></td>
             </tr>
         </tbody>
     </table>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <button type="button" class="btn btn-primary btn-outline" [routerLink]="['/bookings', 'new', 0]">Novo</button>
+        </div>
+    </div>
 </div>

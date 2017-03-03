@@ -12,3 +12,14 @@ professionalRouter.get('/list', (request: Request, response: Response) => {
             response.json(resultado);
         });
 })
+
+professionalRouter.get('/:id', (request: Request, response: Response) => {
+    let professionalApplication: ProfessionalApplication = new ProfessionalApplication();
+
+    let id: number = +request.params.id;
+
+    professionalApplication.getProfessional(id)
+        .then((resultado: Professional) => {
+            response.json(resultado);
+        });
+})

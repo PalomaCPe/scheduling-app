@@ -9,4 +9,8 @@ export class RoleApplication {
     getRoles(): Promise<Role[]>{
         return this.rolePersistence.list();
     }
+
+    getRole(id: number): Promise<Role>{
+        return this.rolePersistence.read(id);
+    }
 }

@@ -11,7 +11,7 @@ bookingRouter.get('/list', (request: Request, response: Response) => {
         .then((resultado: Booking[]) => {
             response.json(resultado);
         });
-})
+});
 
 bookingRouter.get('/:id', (request: Request, response: Response) => {
     let bookingApplication: BookingApplication = new BookingApplication();
@@ -22,4 +22,13 @@ bookingRouter.get('/:id', (request: Request, response: Response) => {
         .then((resultado: Booking) => {
             response.json(resultado);
         });
-})
+});
+
+bookingRouter.post('/post', (request: Request, response: Response) => {
+    let bookingApplication: BookingApplication = new BookingApplication();
+
+    bookingApplication.createBooking(request.body.booking)
+        .then((resultado: Booking) => {
+            response.json(resultado);
+        });
+});

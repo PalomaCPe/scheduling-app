@@ -9,4 +9,8 @@ export class ProjectApplication {
     getProjects(): Promise<Project[]>{
         return this.projectPersistence.list();
     }
+
+    getProject(id: number): Promise<Project>{
+        return this.projectPersistence.read(id);
+    }
 }

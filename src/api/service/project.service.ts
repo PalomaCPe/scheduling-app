@@ -12,3 +12,14 @@ projectRouter.get('/list', (request: Request, response: Response) => {
             response.json(resultado);
         });
 })
+
+projectRouter.get('/:id', (request: Request, response: Response) => {
+    let projectApplication: ProjectApplication = new ProjectApplication();
+
+    let id: number = +request.params.id;
+
+    projectApplication.getProject(id)
+        .then((resultado: Project) => {
+            response.json(resultado);
+        });
+})

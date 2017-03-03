@@ -18,7 +18,7 @@ import { FormsModule } from '@angular/forms';
         // ROTA
         RouterModule.forChild([
             { path: 'bookings', component: BookingComponent },
-            { path: 'bookings/:id', component: BookingDetailComponent }
+            { path: 'bookings/:action/:id', component: BookingDetailComponent }
         ])],
     declarations: [BookingComponent, BookingDetailComponent, PercentualPipe],
     providers: [BookingService, ProjectService, ProfessionalService]

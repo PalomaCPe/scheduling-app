@@ -9,4 +9,8 @@ export class ProfessionalApplication {
     getProfessionals(): Promise<Professional[]>{
         return this.professionalPersistence.list();
     }
+
+    getProfessional(id: number): Promise<Professional>{
+        return this.professionalPersistence.read(id);
+    }
 }

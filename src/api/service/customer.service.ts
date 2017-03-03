@@ -12,3 +12,14 @@ customerRouter.get('/list', (request: Request, response: Response) => {
             response.json(resultado);
         });
 })
+
+customerRouter.get('/:id', (request: Request, response: Response) => {
+    let customerApplication: CustomerApplication = new CustomerApplication();
+
+    let id: number = +request.params.id;
+
+    customerApplication.getCustomer(id)
+        .then((resultado: Customer) => {
+            response.json(resultado);
+        });
+})

@@ -20,10 +20,21 @@ export class BookingService {
                 return response.json() as Booking[];
             });
     }
+    
     getBooking(id: number): Promise<Booking> {
         let url: string = `${SERVICE_URL}/${id}`;
 
         return this._httpService.get(url)
+            .toPromise()
+            .then((response: Response) => {
+                return response.json() as Booking;
+            });
+    }
+
+    createBooking(booking: Booking){
+        let url: string = `${SERVICE_URL}/post`;
+
+        return this._httpService.post(url, { booking: booking } )
             .toPromise()
             .then((response: Response) => {
                 return response.json() as Booking;

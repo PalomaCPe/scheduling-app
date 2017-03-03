@@ -13,4 +13,8 @@ export class BookingApplication {
     getBooking(id: number){
         return this.bookingPersistence.read(id);
     }
+
+    createBooking(booking: Booking){
+        return this.bookingPersistence.create(booking);
+    }
 }

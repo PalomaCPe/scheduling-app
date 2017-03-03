@@ -12,3 +12,14 @@ roleRouter.get('/list', (request: Request, response: Response) => {
             response.json(resultado);
         });
 })
+
+roleRouter.get('/:id', (request: Request, response: Response) => {
+    let roleApplication: RoleApplication = new RoleApplication();
+
+    let id: number = +request.params.id;
+
+    roleApplication.getRole(id)
+        .then((resultado: Role) => {
+            response.json(resultado);
+        });
+})
