@@ -1,10 +1,7 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Costumer = (function () {
     function Costumer() {
-        this.name = 'costumer';
-        this.contact = '';
-        this.email = '';
-        this.sponsor = '';
     }
     return Costumer;
 }());

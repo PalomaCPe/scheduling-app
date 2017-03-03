@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Project = (function () {
     function Project() {
         this.id = '123';
@@ -6,7 +7,7 @@ var Project = (function () {
         this.start_date = 'p.josephclimber@prservicos.com.br';
         this.end_date = 'joseph climber';
         this.wbs = 'josephclimber@mail.com';
-        this.customer = '2345678';
+        this.Costumer = '2345678';
         this.sponsor = '2345678';
     }
     return Project;

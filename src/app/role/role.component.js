@@ -8,23 +8,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var role_services_1 = require('./role.services');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var role_services_1 = require("./role.services");
 var RoleComponent = (function () {
     function RoleComponent(_roleService) {
         this._roleService = _roleService;
         this.pageName = 'Roles';
         this.roleings = this._roleService.getRoles();
     }
-    RoleComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'role',
-            templateUrl: 'role.html'
-        }), 
-        __metadata('design:paramtypes', [role_services_1.RoleService])
-    ], RoleComponent);
     return RoleComponent;
 }());
+RoleComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'role',
+        templateUrl: 'role.html'
+    }),
+    __metadata("design:paramtypes", [role_services_1.RoleService])
+], RoleComponent);
 exports.RoleComponent = RoleComponent;
 //# sourceMappingURL=role.component.js.map
