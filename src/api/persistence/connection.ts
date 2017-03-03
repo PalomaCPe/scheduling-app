@@ -9,6 +9,6 @@ export class Connection {
                 console.log('conectou');
                 return db;
             })
-            .catch(() => { console.log('Erro') });
+            .catch((e: any) => { console.log('Erro') });
     }
 }

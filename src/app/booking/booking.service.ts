@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http'
-
 import { Booking } from './booking';
 import { BOOKINGS } from '../shared/mock';
 
@@ -24,6 +23,13 @@ export class BookingService {
     getBooking(id: number): Promise<Booking> {
         let url: string = `${SERVICE_URL}/${id}`;
         return this._httpService.get(url).toPromise().then((response: Response) => {
+            return response.json() as Booking;
+        })
+    }
+
+    createBooking(booking: Booking) {
+        let url: string = `${SERVICE_URL}/post`;
+        return this._httpService.post(url, { booking: Booking }).toPromise().then((response: Response) => {
             return response.json() as Booking;
         })
     }

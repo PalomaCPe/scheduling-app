@@ -13,7 +13,7 @@ import { PercentualPipe } from '../shared/percentualPipe';
         // ROTA
         RouterModule.forChild([
             { path: 'bookings', component: BookingComponent },
-            { path: 'booking/:id', component: BookingDetailComponent }
+            { path: 'booking/:action/:id', component: BookingDetailComponent }
         ])],
     declarations: [BookingComponent, PercentualPipe, BookingDetailComponent],
     providers: [BookingService, ProjectService]

@@ -10,7 +10,6 @@ bookingRouter.get('/list', (request: Request, response: Response) => {
     bookingApplication.getBookings().then((resultado: Booking[]) => {
         response.json(resultado);
     });
-
 })
 
 bookingRouter.get('/:id', (request: Request, response: Response) => {
@@ -18,6 +17,13 @@ bookingRouter.get('/:id', (request: Request, response: Response) => {
     let id: number = +request.params.id;
 
     bookingApplication.getBooking(id).then((resultado: Booking) => {
+        response.json(resultado);
+    });
+})
+
+bookingRouter.post('/post', (request: Request, response: Response) => {
+    let bookingApplication: BookingApplication = new BookingApplication();
+    bookingApplication.creatBooking(request.body.booking).then((resultado: Booking) => {
         response.json(resultado);
     });
 })

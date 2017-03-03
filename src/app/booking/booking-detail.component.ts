@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-
 import { Booking } from './booking';
 import { Project } from '../project/project';
 import { BookingService } from './booking.service';
@@ -23,9 +22,17 @@ export class BookingDetailComponent implements OnInit {
 
     id: number;
     booking: Booking;
+    action: string;
 
     ngOnInit() {
-        this.getBooking();
+        this._route.params.forEach((param: Params) => {
+            this.action = param["action"]
+        })
+
+        if (this.action == 'detail')
+            this.getBooking();
+        else
+            this.booking = new Booking();
     }
 
     getBooking() {
@@ -36,6 +43,11 @@ export class BookingDetailComponent implements OnInit {
         this._bookingService.getBooking(this.id).then((result: Booking) => {
             this.booking = result;
         });
+    }
+    onSave() {
+        this._bookingService.createBooking(this.booking).then((result: Booking) => {
+            this.booking = result;
+        })
     }
 
 }
